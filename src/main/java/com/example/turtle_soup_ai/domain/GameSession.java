@@ -17,6 +17,8 @@ public class GameSession {
     private String finalStatement; // 玩家最终陈述
     private List<String> logs = new ArrayList<>(); // 游戏日志列表
 
+    private boolean played = false;
+
     public void addLog(String log) {
         this.logs.add(log);
     }

@@ -23,8 +23,29 @@
     <button onclick="ask()">提问</button>
     <button onclick="giveUp()">放弃</button>
     <button onclick="newGame()">新的一局</button>
+    <button onclick="guess()">我知道答案了</button>
 
     <div class="log" id="log"></div>
+</div>
+
+<!-- 胜利弹窗（默认隐藏） -->
+<div id="winModal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.5);">
+    <div style="background:#fff; width:300px; margin:100px auto; padding:20px; text-align:center;">
+        <h2>🎉 恭喜胜利！</h2>
+        <p>你成功复盘了真相。</p>
+        <button onclick="newGame()">新的一局</button>
+        <button onclick="viewHistory()">历史回顾</button>
+    </div>
+</div>
+
+<!-- 喝完所有汤弹窗 -->
+<div id="endModal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.5);">
+    <div style="background:#fff; width:320px; margin:100px auto; padding:20px; text-align:center;">
+        <h2>🥳 全部喝完啦！</h2>
+        <p>你已经体验了所有海龟汤题目。</p>
+        <button onclick="closeEndModal()">确定</button>
+        <button onclick="restartAll()">重新来一轮</button>
+    </div>
 </div>
 
 <script>
@@ -38,6 +59,11 @@
         fetch('/game/start')
             .then(r => r.text())
             .then(t => {
+                if (t.includes("喝完")) {
+                  showEndModal();
+                   document.getElementById('soupSurface').innerText = "所有题目已完成";
+                   return;
+                }
                 document.getElementById('soupSurface').innerText = t;
                 document.getElementById('log').innerHTML = '';
                 log('游戏开始');
@@ -73,11 +99,63 @@
         fetch('/game/new', { method: 'POST' })
             .then(r => r.text())
             .then(t => {
+                if (t.includes("喝完")) {
+                  showEndModal();
+                  return;
+                }
                 document.getElementById('soupSurface').innerText = t;
                 document.getElementById('log').innerHTML = '';
+                document.getElementById('winModal').style.display = "none";
                 log('新的一局开始');
             });
     }
+
+    function guess() {
+        const statement = document.getElementById('question').value;
+        if (!statement) return;
+
+        fetch('/game/guess', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+            body: 'statement=' + encodeURIComponent(statement)
+        })
+        .then(res => res.text())
+        .then(result => {
+            log('Q(猜测): ' + statement);
+            if (result === "WIN") {
+                showWinModal(); // 显示胜利弹窗
+            } else {
+                log('A: 还没完全对，再想想吧。');
+            }
+            document.getElementById('question').value = '';
+        });
+    }
+
+    function showWinModal() {
+        document.getElementById('winModal').style.display = "block";
+        log('🎉 恭喜胜利！');
+    }
+
+    function viewHistory() {
+        alert("🐢 历史回顾功能即将上线！");
+    }
+
+    function showEndModal() {
+        document.getElementById('endModal').style.display = "block";
+    }
+
+    function closeEndModal() {
+        document.getElementById('endModal').style.display = "none";
+    }
+
+    function restartAll() {
+        fetch('/game/reset', { method: 'POST' })
+            .then(() => {
+                document.getElementById('endModal').style.display = "none";
+                loadStart();
+            });
+    }
+
 
     loadStart();
 </script>

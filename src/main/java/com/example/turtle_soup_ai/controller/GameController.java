@@ -22,8 +22,11 @@ public class GameController {
     }
 
     @GetMapping("/start")
-    public String start() {
-        return gameService.getCurrentSession().getSoupSurface();
+    public ResponseEntity<String> start() {
+        if (gameService.getCurrentSession() == null) {
+            return ResponseEntity.ok("🐢 你已经喝完了所有海龟汤！");
+        }
+        return ResponseEntity.ok(gameService.getCurrentSession().getSoupSurface());
     }
 
     @PostMapping("/ask")
@@ -42,13 +45,17 @@ public class GameController {
     }
 
     @PostMapping("/new")
-    public String newGame() {
+    public ResponseEntity<String> newGame() {
         gameService.startNewGame();
         logger.info("开始新的一局");
-        return gameService.getCurrentSession().getSoupSurface();
+
+        if (gameService.getCurrentSession() == null) {
+            return ResponseEntity.ok("🐢 你已经喝完了所有海龟汤！");
+        }
+        return ResponseEntity.ok(gameService.getCurrentSession().getSoupSurface());
     }
 
-    @PostMapping("/game/guess")
+    @PostMapping("/guess")
     public ResponseEntity<String> guess(@RequestParam String statement) {
         GameSession session = gameService.getCurrentSession();
         boolean win = aiService.checkWin(statement, session.getSoupBottom()); // 注意：这里应该是getSoupBottom()（你的GameSession里是这个方法）
@@ -62,7 +69,11 @@ public class GameController {
         }
 
     }
+
+    //重置题库接口
+    @PostMapping("/reset")
+    public ResponseEntity<Void> reset() {
+        gameService.resetAll();
+        return ResponseEntity.ok().build();
+    }
 }
-
-
-

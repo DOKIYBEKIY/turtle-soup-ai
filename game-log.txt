@@ -1,638 +1,234 @@
-2026-01-14 11:21:58 [INFO] Starting TurtleSoupAiApplication using Java 17.0.16 with PID 20992 (D:\JavaCode\turtle-soup-ai\target\classes started by Administrator in D:\JavaCode\turtle-soup-ai)
-2026-01-14 11:21:58 [INFO] No active profile set, falling back to 1 default profile: "default"
-2026-01-14 11:21:58 [INFO] Tomcat initialized with port 8080 (http)
-2026-01-14 11:21:58 [INFO] Initializing ProtocolHandler ["http-nio-8080"]
-2026-01-14 11:21:58 [INFO] Starting service [Tomcat]
-2026-01-14 11:21:58 [INFO] Starting Servlet engine: [Apache Tomcat/10.1.50]
-2026-01-14 11:21:58 [INFO] Initializing Spring embedded WebApplicationContext
-2026-01-14 11:21:58 [INFO] Root WebApplicationContext: initialization completed in 570 ms
-2026-01-14 11:21:58 [INFO] Starting ProtocolHandler ["http-nio-8080"]
-2026-01-14 11:21:58 [INFO] Tomcat started on port 8080 (http) with context path '/'
-2026-01-14 11:21:58 [INFO] Started TurtleSoupAiApplication in 1.329 seconds (process running for 1.617)
-2026-01-14 11:24:49 [INFO] Commencing graceful shutdown. Waiting for active requests to complete
-2026-01-14 11:24:50 [INFO] Graceful shutdown complete
-2026-01-14 11:24:54 [INFO] Starting TurtleSoupAiApplication using Java 17.0.16 with PID 9484 (D:\JavaCode\turtle-soup-ai\target\classes started by Administrator in D:\JavaCode\turtle-soup-ai)
-2026-01-14 11:24:54 [INFO] No active profile set, falling back to 1 default profile: "default"
-2026-01-14 11:24:54 [INFO] Tomcat initialized with port 8080 (http)
-2026-01-14 11:24:54 [INFO] Initializing ProtocolHandler ["http-nio-8080"]
-2026-01-14 11:24:54 [INFO] Starting service [Tomcat]
-2026-01-14 11:24:54 [INFO] Starting Servlet engine: [Apache Tomcat/10.1.50]
-2026-01-14 11:24:54 [INFO] Initializing Spring embedded WebApplicationContext
-2026-01-14 11:24:54 [INFO] Root WebApplicationContext: initialization completed in 574 ms
-2026-01-14 11:24:55 [INFO] Starting ProtocolHandler ["http-nio-8080"]
-2026-01-14 11:24:55 [INFO] Tomcat started on port 8080 (http) with context path '/'
-2026-01-14 11:24:55 [INFO] Started TurtleSoupAiApplication in 1.214 seconds (process running for 1.396)
-2026-01-14 11:25:24 [INFO] Initializing Spring DispatcherServlet 'dispatcherServlet'
-2026-01-14 11:25:24 [INFO] Initializing Servlet 'dispatcherServlet'
-2026-01-14 11:25:24 [INFO] Completed initialization in 1 ms
-2026-01-14 11:30:51 [INFO] Commencing graceful shutdown. Waiting for active requests to complete
-2026-01-14 11:30:52 [INFO] Graceful shutdown complete
-2026-01-14 11:30:54 [INFO] Starting TurtleSoupAiApplication using Java 17.0.16 with PID 8548 (D:\JavaCode\turtle-soup-ai\target\classes started by Administrator in D:\JavaCode\turtle-soup-ai)
-2026-01-14 11:30:54 [INFO] No active profile set, falling back to 1 default profile: "default"
-2026-01-14 11:30:55 [INFO] Tomcat initialized with port 8080 (http)
-2026-01-14 11:30:55 [INFO] Initializing ProtocolHandler ["http-nio-8080"]
-2026-01-14 11:30:55 [INFO] Starting service [Tomcat]
-2026-01-14 11:30:55 [INFO] Starting Servlet engine: [Apache Tomcat/10.1.50]
-2026-01-14 11:30:55 [INFO] Initializing Spring embedded WebApplicationContext
-2026-01-14 11:30:55 [INFO] Root WebApplicationContext: initialization completed in 529 ms
-2026-01-14 11:30:55 [INFO] Starting ProtocolHandler ["http-nio-8080"]
-2026-01-14 11:30:55 [INFO] Tomcat started on port 8080 (http) with context path '/'
-2026-01-14 11:30:55 [INFO] Started TurtleSoupAiApplication in 1.144 seconds (process running for 1.312)
-2026-01-14 11:31:37 [INFO] Commencing graceful shutdown. Waiting for active requests to complete
-2026-01-14 11:31:37 [INFO] Graceful shutdown complete
-2026-01-14 15:50:17 [INFO] Starting TurtleSoupAiApplication using Java 17.0.16 with PID 9404 (D:\JavaCode\turtle-soup-ai\target\classes started by Administrator in D:\JavaCode\turtle-soup-ai)
-2026-01-14 15:50:17 [INFO] No active profile set, falling back to 1 default profile: "default"
-2026-01-14 15:50:17 [INFO] Tomcat initialized with port 8080 (http)
-2026-01-14 15:50:17 [INFO] Initializing ProtocolHandler ["http-nio-8080"]
-2026-01-14 15:50:17 [INFO] Starting service [Tomcat]
-2026-01-14 15:50:17 [INFO] Starting Servlet engine: [Apache Tomcat/10.1.50]
-2026-01-14 15:50:17 [INFO] Initializing Spring embedded WebApplicationContext
-2026-01-14 15:50:17 [INFO] Root WebApplicationContext: initialization completed in 515 ms
-2026-01-14 15:50:17 [INFO] Starting ProtocolHandler ["http-nio-8080"]
-2026-01-14 15:50:17 [INFO] Tomcat started on port 8080 (http) with context path '/'
-2026-01-14 15:50:17 [INFO] Started TurtleSoupAiApplication in 1.208 seconds (process running for 1.447)
-2026-01-14 15:51:53 [INFO] Initializing Spring DispatcherServlet 'dispatcherServlet'
-2026-01-14 15:51:53 [INFO] Initializing Servlet 'dispatcherServlet'
-2026-01-14 15:51:53 [INFO] Completed initialization in 1 ms
-2026-01-14 15:53:22 [INFO] Commencing graceful shutdown. Waiting for active requests to complete
-2026-01-14 15:53:22 [INFO] Graceful shutdown complete
-2026-01-14 15:55:08 [INFO] Starting TurtleSoupAiApplication using Java 17.0.16 with PID 18816 (D:\JavaCode\turtle-soup-ai\target\classes started by Administrator in D:\JavaCode\turtle-soup-ai)
-2026-01-14 15:55:08 [INFO] No active profile set, falling back to 1 default profile: "default"
-2026-01-14 15:55:09 [INFO] Tomcat initialized with port 8081 (http)
-2026-01-14 15:55:09 [INFO] Initializing ProtocolHandler ["http-nio-8081"]
-2026-01-14 15:55:09 [INFO] Starting service [Tomcat]
-2026-01-14 15:55:09 [INFO] Starting Servlet engine: [Apache Tomcat/10.1.50]
-2026-01-14 15:55:09 [INFO] Initializing Spring embedded WebApplicationContext
-2026-01-14 15:55:09 [INFO] Root WebApplicationContext: initialization completed in 531 ms
-2026-01-14 15:55:09 [INFO] Starting ProtocolHandler ["http-nio-8081"]
-2026-01-14 15:55:09 [INFO] Tomcat started on port 8081 (http) with context path '/'
-2026-01-14 15:55:09 [INFO] Started TurtleSoupAiApplication in 1.129 seconds (process running for 1.301)
-2026-01-14 15:55:18 [INFO] Initializing Spring DispatcherServlet 'dispatcherServlet'
-2026-01-14 15:55:18 [INFO] Initializing Servlet 'dispatcherServlet'
-2026-01-14 15:55:18 [INFO] Completed initialization in 1 ms
-2026-01-14 15:55:52 [INFO] Commencing graceful shutdown. Waiting for active requests to complete
-2026-01-14 15:55:52 [INFO] Graceful shutdown complete
-2026-01-14 15:56:44 [INFO] Starting TurtleSoupAiApplication using Java 17.0.16 with PID 5064 (D:\JavaCode\turtle-soup-ai\target\classes started by Administrator in D:\JavaCode\turtle-soup-ai)
-2026-01-14 15:56:44 [INFO] No active profile set, falling back to 1 default profile: "default"
-2026-01-14 15:56:45 [INFO] Tomcat initialized with port 8080 (http)
-2026-01-14 15:56:45 [INFO] Initializing ProtocolHandler ["http-nio-8080"]
-2026-01-14 15:56:45 [INFO] Starting service [Tomcat]
-2026-01-14 15:56:45 [INFO] Starting Servlet engine: [Apache Tomcat/10.1.50]
-2026-01-14 15:56:45 [INFO] Initializing Spring embedded WebApplicationContext
-2026-01-14 15:56:45 [INFO] Root WebApplicationContext: initialization completed in 550 ms
-2026-01-14 15:56:45 [INFO] Starting ProtocolHandler ["http-nio-8080"]
-2026-01-14 15:56:45 [INFO] Tomcat started on port 8080 (http) with context path '/'
-2026-01-14 15:56:45 [INFO] Started TurtleSoupAiApplication in 1.166 seconds (process running for 1.339)
-2026-01-14 15:57:30 [INFO] Initializing Spring DispatcherServlet 'dispatcherServlet'
-2026-01-14 15:57:30 [INFO] Initializing Servlet 'dispatcherServlet'
-2026-01-14 15:57:30 [INFO] Completed initialization in 0 ms
-2026-01-14 15:58:04 [INFO] Commencing graceful shutdown. Waiting for active requests to complete
-2026-01-14 15:58:04 [INFO] Graceful shutdown complete
-2026-01-14 15:59:04 [INFO] Starting TurtleSoupAiApplication using Java 17.0.16 with PID 20372 (D:\JavaCode\turtle-soup-ai\target\classes started by Administrator in D:\JavaCode\turtle-soup-ai)
-2026-01-14 15:59:04 [INFO] No active profile set, falling back to 1 default profile: "default"
-2026-01-14 15:59:05 [INFO] Tomcat initialized with port 8080 (http)
-2026-01-14 15:59:05 [INFO] Initializing ProtocolHandler ["http-nio-8080"]
-2026-01-14 15:59:05 [INFO] Starting service [Tomcat]
-2026-01-14 15:59:05 [INFO] Starting Servlet engine: [Apache Tomcat/10.1.50]
-2026-01-14 15:59:05 [INFO] Initializing Spring embedded WebApplicationContext
-2026-01-14 15:59:05 [INFO] Root WebApplicationContext: initialization completed in 477 ms
-2026-01-14 15:59:05 [INFO] Starting ProtocolHandler ["http-nio-8080"]
-2026-01-14 15:59:05 [INFO] Tomcat started on port 8080 (http) with context path '/'
-2026-01-14 15:59:05 [INFO] Started TurtleSoupAiApplication in 1.108 seconds (process running for 1.306)
-2026-01-14 16:17:59 [INFO] Commencing graceful shutdown. Waiting for active requests to complete
-2026-01-14 16:17:59 [INFO] Graceful shutdown complete
-2026-01-14 16:27:08 [INFO] Starting TurtleSoupAiApplication using Java 17.0.16 with PID 17752 (D:\JavaCode\turtle-soup-ai\target\classes started by Administrator in D:\JavaCode\turtle-soup-ai)
-2026-01-14 16:27:08 [INFO] No active profile set, falling back to 1 default profile: "default"
-2026-01-14 16:27:09 [INFO] Tomcat initialized with port 8080 (http)
-2026-01-14 16:27:09 [INFO] Initializing ProtocolHandler ["http-nio-8080"]
-2026-01-14 16:27:09 [INFO] Starting service [Tomcat]
-2026-01-14 16:27:09 [INFO] Starting Servlet engine: [Apache Tomcat/10.1.50]
-2026-01-14 16:27:09 [INFO] Initializing Spring embedded WebApplicationContext
-2026-01-14 16:27:09 [INFO] Root WebApplicationContext: initialization completed in 540 ms
-2026-01-14 16:27:09 [INFO] Adding welcome page: class path resource [static/index.html]
-2026-01-14 16:27:09 [INFO] Starting ProtocolHandler ["http-nio-8080"]
-2026-01-14 16:27:09 [INFO] Tomcat started on port 8080 (http) with context path '/'
-2026-01-14 16:27:09 [INFO] Started TurtleSoupAiApplication in 1.138 seconds (process running for 1.305)
-2026-01-14 16:27:18 [INFO] Initializing Spring DispatcherServlet 'dispatcherServlet'
-2026-01-14 16:27:18 [INFO] Initializing Servlet 'dispatcherServlet'
-2026-01-14 16:27:18 [INFO] Completed initialization in 0 ms
-2026-01-14 16:28:35 [ERROR] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.web.client.HttpClientErrorException$Forbidden: 403 Forbidden on POST request for "https://dashscope.aliyuncs.com/api/v1/services/aigc/text-generation/generation": "{"code":"AccessDenied.Unpurchased","message":"Access to model denied. Please make sure you are eligible for using the model.","request_id":"1378b21c-8d50-492c-bac3-0938e2987fc3"}"] with root cause
-org.springframework.web.client.HttpClientErrorException$Forbidden: 403 Forbidden on POST request for "https://dashscope.aliyuncs.com/api/v1/services/aigc/text-generation/generation": "{"code":"AccessDenied.Unpurchased","message":"Access to model denied. Please make sure you are eligible for using the model.","request_id":"1378b21c-8d50-492c-bac3-0938e2987fc3"}"
-	at org.springframework.web.client.HttpClientErrorException.create(HttpClientErrorException.java:109)
-	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:186)
-	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:147)
-	at org.springframework.web.client.RestTemplate.handleResponse(RestTemplate.java:953)
-	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:902)
-	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:801)
-	at org.springframework.web.client.RestTemplate.postForEntity(RestTemplate.java:549)
-	at com.example.turtle_soup_ai.service.AiService.answer(AiService.java:67)
-	at com.example.turtle_soup_ai.controller.GameController.ask(GameController.java:29)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258)
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:191)
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:991)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:896)
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
-	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:88)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1774)
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:973)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:491)
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
-	at java.base/java.lang.Thread.run(Thread.java:840)
-2026-01-14 16:29:20 [ERROR] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.web.client.HttpClientErrorException$Forbidden: 403 Forbidden on POST request for "https://dashscope.aliyuncs.com/api/v1/services/aigc/text-generation/generation": "{"code":"AccessDenied.Unpurchased","message":"Access to model denied. Please make sure you are eligible for using the model.","request_id":"1b7ddbf1-197d-4d7f-b301-d730041c2d88"}"] with root cause
-org.springframework.web.client.HttpClientErrorException$Forbidden: 403 Forbidden on POST request for "https://dashscope.aliyuncs.com/api/v1/services/aigc/text-generation/generation": "{"code":"AccessDenied.Unpurchased","message":"Access to model denied. Please make sure you are eligible for using the model.","request_id":"1b7ddbf1-197d-4d7f-b301-d730041c2d88"}"
-	at org.springframework.web.client.HttpClientErrorException.create(HttpClientErrorException.java:109)
-	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:186)
-	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:147)
-	at org.springframework.web.client.RestTemplate.handleResponse(RestTemplate.java:953)
-	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:902)
-	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:801)
-	at org.springframework.web.client.RestTemplate.postForEntity(RestTemplate.java:549)
-	at com.example.turtle_soup_ai.service.AiService.answer(AiService.java:67)
-	at com.example.turtle_soup_ai.controller.GameController.ask(GameController.java:29)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258)
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:191)
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:991)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:896)
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
-	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:88)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1774)
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:973)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:491)
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
-	at java.base/java.lang.Thread.run(Thread.java:840)
-2026-01-14 16:29:54 [INFO] 开始新的一局
-2026-01-14 16:31:20 [INFO] Commencing graceful shutdown. Waiting for active requests to complete
-2026-01-14 16:31:20 [INFO] Graceful shutdown complete
-2026-01-14 16:31:40 [INFO] Starting TurtleSoupAiApplication using Java 17.0.16 with PID 11688 (D:\JavaCode\turtle-soup-ai\target\classes started by Administrator in D:\JavaCode\turtle-soup-ai)
-2026-01-14 16:31:40 [INFO] No active profile set, falling back to 1 default profile: "default"
-2026-01-14 16:31:41 [INFO] Tomcat initialized with port 8080 (http)
-2026-01-14 16:31:41 [INFO] Initializing ProtocolHandler ["http-nio-8080"]
-2026-01-14 16:31:41 [INFO] Starting service [Tomcat]
-2026-01-14 16:31:41 [INFO] Starting Servlet engine: [Apache Tomcat/10.1.50]
-2026-01-14 16:31:41 [INFO] Initializing Spring embedded WebApplicationContext
-2026-01-14 16:31:41 [INFO] Root WebApplicationContext: initialization completed in 638 ms
-2026-01-14 16:31:41 [INFO] Adding welcome page: class path resource [static/index.html]
-2026-01-14 16:31:41 [INFO] Starting ProtocolHandler ["http-nio-8080"]
-2026-01-14 16:31:41 [INFO] Tomcat started on port 8080 (http) with context path '/'
-2026-01-14 16:31:41 [INFO] Started TurtleSoupAiApplication in 1.326 seconds (process running for 1.512)
-2026-01-14 16:31:45 [INFO] Initializing Spring DispatcherServlet 'dispatcherServlet'
-2026-01-14 16:31:45 [INFO] Initializing Servlet 'dispatcherServlet'
-2026-01-14 16:31:45 [INFO] Completed initialization in 1 ms
-2026-01-14 16:32:02 [ERROR] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.web.client.HttpClientErrorException$Forbidden: 403 Forbidden on POST request for "https://dashscope.aliyuncs.com/api/v1/services/aigc/text-generation/generation": "{"code":"AccessDenied.Unpurchased","message":"Access to model denied. Please make sure you are eligible for using the model.","request_id":"b1732f18-4689-4edb-a62c-7f2f5bcf5df2"}"] with root cause
-org.springframework.web.client.HttpClientErrorException$Forbidden: 403 Forbidden on POST request for "https://dashscope.aliyuncs.com/api/v1/services/aigc/text-generation/generation": "{"code":"AccessDenied.Unpurchased","message":"Access to model denied. Please make sure you are eligible for using the model.","request_id":"b1732f18-4689-4edb-a62c-7f2f5bcf5df2"}"
-	at org.springframework.web.client.HttpClientErrorException.create(HttpClientErrorException.java:109)
-	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:186)
-	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:147)
-	at org.springframework.web.client.RestTemplate.handleResponse(RestTemplate.java:953)
-	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:902)
-	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:801)
-	at org.springframework.web.client.RestTemplate.postForEntity(RestTemplate.java:549)
-	at com.example.turtle_soup_ai.service.AiService.answer(AiService.java:67)
-	at com.example.turtle_soup_ai.controller.GameController.ask(GameController.java:29)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258)
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:191)
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:991)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:896)
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
-	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:88)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1774)
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:973)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:491)
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
-	at java.base/java.lang.Thread.run(Thread.java:840)
-2026-01-14 16:32:06 [INFO] 开始新的一局
-2026-01-14 16:32:08 [INFO] 开始新的一局
-2026-01-14 16:32:19 [INFO] Commencing graceful shutdown. Waiting for active requests to complete
-2026-01-14 16:32:19 [INFO] Graceful shutdown complete
-2026-01-14 16:32:34 [INFO] Starting TurtleSoupAiApplication using Java 17.0.16 with PID 9912 (D:\JavaCode\turtle-soup-ai\target\classes started by Administrator in D:\JavaCode\turtle-soup-ai)
-2026-01-14 16:32:34 [INFO] No active profile set, falling back to 1 default profile: "default"
-2026-01-14 16:32:35 [INFO] Tomcat initialized with port 8080 (http)
-2026-01-14 16:32:35 [INFO] Initializing ProtocolHandler ["http-nio-8080"]
-2026-01-14 16:32:35 [INFO] Starting service [Tomcat]
-2026-01-14 16:32:35 [INFO] Starting Servlet engine: [Apache Tomcat/10.1.50]
-2026-01-14 16:32:35 [INFO] Initializing Spring embedded WebApplicationContext
-2026-01-14 16:32:35 [INFO] Root WebApplicationContext: initialization completed in 595 ms
-2026-01-14 16:32:35 [INFO] Adding welcome page: class path resource [static/index.html]
-2026-01-14 16:32:35 [INFO] Starting ProtocolHandler ["http-nio-8080"]
-2026-01-14 16:32:35 [INFO] Tomcat started on port 8080 (http) with context path '/'
-2026-01-14 16:32:35 [INFO] Started TurtleSoupAiApplication in 1.26 seconds (process running for 1.45)
-2026-01-14 16:32:40 [INFO] Initializing Spring DispatcherServlet 'dispatcherServlet'
-2026-01-14 16:32:40 [INFO] Initializing Servlet 'dispatcherServlet'
-2026-01-14 16:32:40 [INFO] Completed initialization in 1 ms
-2026-01-14 16:32:54 [ERROR] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.web.client.HttpClientErrorException$Forbidden: 403 Forbidden on POST request for "https://dashscope.aliyuncs.com/api/v1/services/aigc/text-generation/generation": "{"code":"AccessDenied.Unpurchased","message":"Access to model denied. Please make sure you are eligible for using the model.","request_id":"5e93856a-9c35-4d60-8302-984f6550365d"}"] with root cause
-org.springframework.web.client.HttpClientErrorException$Forbidden: 403 Forbidden on POST request for "https://dashscope.aliyuncs.com/api/v1/services/aigc/text-generation/generation": "{"code":"AccessDenied.Unpurchased","message":"Access to model denied. Please make sure you are eligible for using the model.","request_id":"5e93856a-9c35-4d60-8302-984f6550365d"}"
-	at org.springframework.web.client.HttpClientErrorException.create(HttpClientErrorException.java:109)
-	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:186)
-	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:147)
-	at org.springframework.web.client.RestTemplate.handleResponse(RestTemplate.java:953)
-	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:902)
-	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:801)
-	at org.springframework.web.client.RestTemplate.postForEntity(RestTemplate.java:549)
-	at com.example.turtle_soup_ai.service.AiService.answer(AiService.java:67)
-	at com.example.turtle_soup_ai.controller.GameController.ask(GameController.java:29)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258)
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:191)
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:991)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:896)
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
-	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:88)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1774)
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:973)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:491)
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
-	at java.base/java.lang.Thread.run(Thread.java:840)
-2026-01-14 16:32:56 [INFO] 开始新的一局
-2026-01-14 16:32:57 [INFO] 开始新的一局
-2026-01-14 16:32:59 [INFO] 开始新的一局
-2026-01-14 16:33:00 [INFO] 开始新的一局
-2026-01-14 16:33:02 [INFO] 开始新的一局
-2026-01-14 16:33:02 [INFO] 开始新的一局
-2026-01-14 16:33:03 [INFO] 开始新的一局
-2026-01-14 16:33:04 [INFO] 开始新的一局
-2026-01-14 16:33:06 [INFO] 开始新的一局
-2026-01-14 16:33:07 [INFO] 开始新的一局
-2026-01-14 16:33:07 [INFO] 开始新的一局
-2026-01-14 18:42:36 [INFO] 开始新的一局
-2026-01-14 18:42:37 [INFO] 开始新的一局
-2026-01-14 18:42:39 [INFO] 开始新的一局
-2026-01-14 18:43:09 [INFO] Commencing graceful shutdown. Waiting for active requests to complete
-2026-01-14 18:43:09 [INFO] Graceful shutdown complete
-2026-01-14 19:07:48 [INFO] Starting TurtleSoupAiApplication using Java 17.0.16 with PID 12556 (D:\JavaCode\turtle-soup-ai\target\classes started by Administrator in D:\JavaCode\turtle-soup-ai)
-2026-01-14 19:07:48 [INFO] No active profile set, falling back to 1 default profile: "default"
-2026-01-14 19:07:49 [INFO] Tomcat initialized with port 8080 (http)
-2026-01-14 19:07:49 [INFO] Initializing ProtocolHandler ["http-nio-8080"]
-2026-01-14 19:07:49 [INFO] Starting service [Tomcat]
-2026-01-14 19:07:49 [INFO] Starting Servlet engine: [Apache Tomcat/10.1.50]
-2026-01-14 19:07:49 [INFO] Initializing Spring embedded WebApplicationContext
-2026-01-14 19:07:49 [INFO] Root WebApplicationContext: initialization completed in 611 ms
-2026-01-14 19:07:49 [INFO] Adding welcome page: class path resource [static/index.html]
-2026-01-14 19:07:49 [INFO] Starting ProtocolHandler ["http-nio-8080"]
-2026-01-14 19:07:49 [INFO] Tomcat started on port 8080 (http) with context path '/'
-2026-01-14 19:07:49 [INFO] Started TurtleSoupAiApplication in 1.291 seconds (process running for 1.485)
-2026-01-14 19:07:59 [INFO] Initializing Spring DispatcherServlet 'dispatcherServlet'
-2026-01-14 19:07:59 [INFO] Initializing Servlet 'dispatcherServlet'
-2026-01-14 19:07:59 [INFO] Completed initialization in 1 ms
-2026-01-14 19:08:34 [ERROR] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.web.client.HttpClientErrorException$Forbidden: 403 Forbidden on POST request for "https://dashscope.aliyuncs.com/api/v1/services/aigc/text-generation/generation": "{"code":"AccessDenied.Unpurchased","message":"Access to model denied. Please make sure you are eligible for using the model.","request_id":"31f47167-b234-4f58-b588-7a6b1b96cf7e"}"] with root cause
-org.springframework.web.client.HttpClientErrorException$Forbidden: 403 Forbidden on POST request for "https://dashscope.aliyuncs.com/api/v1/services/aigc/text-generation/generation": "{"code":"AccessDenied.Unpurchased","message":"Access to model denied. Please make sure you are eligible for using the model.","request_id":"31f47167-b234-4f58-b588-7a6b1b96cf7e"}"
-	at org.springframework.web.client.HttpClientErrorException.create(HttpClientErrorException.java:109)
-	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:186)
-	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:147)
-	at org.springframework.web.client.RestTemplate.handleResponse(RestTemplate.java:953)
-	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:902)
-	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:801)
-	at org.springframework.web.client.RestTemplate.postForEntity(RestTemplate.java:549)
-	at com.example.turtle_soup_ai.service.AiService.answer(AiService.java:67)
-	at com.example.turtle_soup_ai.controller.GameController.ask(GameController.java:29)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258)
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:191)
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:991)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:896)
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
-	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:88)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1774)
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:973)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:491)
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
-	at java.base/java.lang.Thread.run(Thread.java:840)
-2026-01-14 19:08:53 [ERROR] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.web.client.HttpClientErrorException$Forbidden: 403 Forbidden on POST request for "https://dashscope.aliyuncs.com/api/v1/services/aigc/text-generation/generation": "{"code":"AccessDenied.Unpurchased","message":"Access to model denied. Please make sure you are eligible for using the model.","request_id":"7af9c79e-b143-4fee-a7ea-8fe399e9d752"}"] with root cause
-org.springframework.web.client.HttpClientErrorException$Forbidden: 403 Forbidden on POST request for "https://dashscope.aliyuncs.com/api/v1/services/aigc/text-generation/generation": "{"code":"AccessDenied.Unpurchased","message":"Access to model denied. Please make sure you are eligible for using the model.","request_id":"7af9c79e-b143-4fee-a7ea-8fe399e9d752"}"
-	at org.springframework.web.client.HttpClientErrorException.create(HttpClientErrorException.java:109)
-	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:186)
-	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:147)
-	at org.springframework.web.client.RestTemplate.handleResponse(RestTemplate.java:953)
-	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:902)
-	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:801)
-	at org.springframework.web.client.RestTemplate.postForEntity(RestTemplate.java:549)
-	at com.example.turtle_soup_ai.service.AiService.answer(AiService.java:67)
-	at com.example.turtle_soup_ai.controller.GameController.ask(GameController.java:29)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258)
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:191)
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:991)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:896)
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
-	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:88)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1774)
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:973)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:491)
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
-	at java.base/java.lang.Thread.run(Thread.java:840)
-2026-01-14 19:09:04 [INFO] 开始新的一局
-2026-01-14 19:09:06 [INFO] 开始新的一局
-2026-01-14 19:09:08 [INFO] 开始新的一局
-2026-01-14 19:20:48 [INFO] Commencing graceful shutdown. Waiting for active requests to complete
-2026-01-14 19:20:48 [INFO] Graceful shutdown complete
-2026-01-14 19:20:53 [INFO] Starting TurtleSoupAiApplication using Java 17.0.16 with PID 19716 (D:\JavaCode\turtle-soup-ai\target\classes started by Administrator in D:\JavaCode\turtle-soup-ai)
-2026-01-14 19:20:53 [INFO] No active profile set, falling back to 1 default profile: "default"
-2026-01-14 19:20:53 [INFO] Tomcat initialized with port 8080 (http)
-2026-01-14 19:20:53 [INFO] Initializing ProtocolHandler ["http-nio-8080"]
-2026-01-14 19:20:53 [INFO] Starting service [Tomcat]
-2026-01-14 19:20:53 [INFO] Starting Servlet engine: [Apache Tomcat/10.1.50]
-2026-01-14 19:20:53 [INFO] Initializing Spring embedded WebApplicationContext
-2026-01-14 19:20:53 [INFO] Root WebApplicationContext: initialization completed in 551 ms
-2026-01-14 19:20:53 [INFO] Adding welcome page: class path resource [static/index.html]
-2026-01-14 19:20:53 [INFO] Starting ProtocolHandler ["http-nio-8080"]
-2026-01-14 19:20:53 [INFO] Tomcat started on port 8080 (http) with context path '/'
-2026-01-14 19:20:53 [INFO] Started TurtleSoupAiApplication in 1.152 seconds (process running for 1.346)
-2026-01-14 19:21:04 [INFO] Initializing Spring DispatcherServlet 'dispatcherServlet'
-2026-01-14 19:21:04 [INFO] Initializing Servlet 'dispatcherServlet'
-2026-01-14 19:21:04 [INFO] Completed initialization in 1 ms
-2026-01-14 19:21:29 [INFO] Q: 我杀人与黑猫有关吗？ -> A: 无关
-2026-01-14 19:21:54 [INFO] Q: 是黑猫干了什么事情导致我杀人吗？ -> A: 无关
-2026-01-14 19:22:55 [INFO] Q: 我经常能在楼下看到那只黑猫，但由于工作出差的原因，只能投喂它。那天出差回来，我发现阳台上有很多死老鼠，下意识想到经常闹矛盾的邻居，随后便冲进他家动了手。伴随着惊呼声和警笛声，我看到了那只黑猫，它也在看着我，嘴里还叼着一只老鼠，才知道是黑猫叼老鼠到阳台，我错怪邻居并冲动犯了错。 -> A: 无关
-2026-01-14 19:23:14 [INFO] 开始新的一局
-2026-01-14 19:23:20 [INFO] 开始新的一局
-2026-01-14 19:23:25 [INFO] 开始新的一局
-2026-01-14 19:23:41 [INFO] Q: 这个人健全吗？ -> A: 无关
-2026-01-14 19:24:04 [INFO] Q: 这个人笑与停电有关吗？ -> A: 无关
-2026-01-14 19:24:15 [INFO] Q: 这个人是个盲人，他看的是盲文书，停电对他的阅读没有任何影响，反而因为停电后房间里更安静，他能更专心看书，所以微笑。 -> A: 无关
-2026-01-14 19:26:08 [INFO] 玩家放弃，汤底：这个人是个盲人，他看的是盲文书，停电对他的阅读没有任何影响，反而因为停电后房间里更安静，他能更专心看书，所以微笑。
-2026-01-14 19:26:13 [INFO] 开始新的一局
-2026-01-14 19:26:36 [INFO] Q: 这个人自杀是自身原因吗？ -> A: 无关
-2026-01-14 19:26:50 [INFO] Q: 这个人是眼疾吗？ -> A: 无关
-2026-01-14 19:27:13 [INFO] Q: 因为他是一个瞎子，去外地医院把眼睛治好了，重见光明。但经过隧道时，隧道内一片漆黑，他以为自己又瞎了，绝望之下便跳车自杀。 -> A: 无关
-2026-01-14 19:27:15 [INFO] 玩家放弃，汤底：因为他是一个瞎子，去外地医院把眼睛治好了，重见光明。但经过隧道时，隧道内一片漆黑，他以为自己又瞎了，绝望之下便跳车自杀
-2026-01-14 19:50:59 [INFO] Commencing graceful shutdown. Waiting for active requests to complete
-2026-01-14 19:50:59 [INFO] Graceful shutdown complete
-2026-01-14 19:53:47 [INFO] Starting TurtleSoupAiApplication using Java 17.0.16 with PID 18852 (D:\JavaCode\turtle-soup-ai\target\classes started by Administrator in D:\JavaCode\turtle-soup-ai)
-2026-01-14 19:53:47 [INFO] No active profile set, falling back to 1 default profile: "default"
-2026-01-14 19:53:48 [INFO] Tomcat initialized with port 8080 (http)
-2026-01-14 19:53:48 [INFO] Initializing ProtocolHandler ["http-nio-8080"]
-2026-01-14 19:53:48 [INFO] Starting service [Tomcat]
-2026-01-14 19:53:48 [INFO] Starting Servlet engine: [Apache Tomcat/10.1.50]
-2026-01-14 19:53:48 [INFO] Initializing Spring embedded WebApplicationContext
-2026-01-14 19:53:48 [INFO] Root WebApplicationContext: initialization completed in 594 ms
-2026-01-14 19:53:48 [INFO] Adding welcome page: class path resource [static/index.html]
-2026-01-14 19:53:48 [INFO] Starting ProtocolHandler ["http-nio-8080"]
-2026-01-14 19:53:48 [INFO] Tomcat started on port 8080 (http) with context path '/'
-2026-01-14 19:53:48 [INFO] Started TurtleSoupAiApplication in 1.269 seconds (process running for 1.457)
-2026-01-14 19:53:59 [INFO] Initializing Spring DispatcherServlet 'dispatcherServlet'
-2026-01-14 19:53:59 [INFO] Initializing Servlet 'dispatcherServlet'
-2026-01-14 19:53:59 [INFO] Completed initialization in 1 ms
-2026-01-14 19:54:16 [INFO] 开始新的一局
-2026-01-14 19:54:17 [INFO] 开始新的一局
-2026-01-14 19:54:18 [INFO] 开始新的一局
-2026-01-14 19:54:18 [INFO] 开始新的一局
-2026-01-14 19:54:19 [INFO] 开始新的一局
-2026-01-14 19:54:20 [INFO] 开始新的一局
-2026-01-14 19:54:20 [INFO] 开始新的一局
-2026-01-14 19:54:21 [INFO] 开始新的一局
-2026-01-14 19:54:22 [INFO] 开始新的一局
-2026-01-14 19:54:22 [INFO] 开始新的一局
-2026-01-14 19:54:23 [INFO] 开始新的一局
-2026-01-14 19:54:23 [INFO] 开始新的一局
-2026-01-14 19:54:24 [INFO] 开始新的一局
-2026-01-14 19:54:25 [INFO] 开始新的一局
-2026-01-14 19:54:26 [INFO] 开始新的一局
-2026-01-14 19:54:26 [INFO] 开始新的一局
-2026-01-14 19:54:27 [INFO] 开始新的一局
-2026-01-14 19:54:28 [INFO] 开始新的一局
-2026-01-14 19:54:28 [INFO] 开始新的一局
-2026-01-14 19:54:49 [INFO] Q: 他自杀与失明有关吗？ -> A: 是
-2026-01-14 19:55:09 [INFO] Q: 他的病是失明吗？ -> A: 是
-2026-01-14 19:55:25 [INFO] Q: 他自杀是因为手术失败吗？ -> A: 否
-2026-01-14 19:55:36 [INFO] Q: 他的手术成功了吗？ -> A: 是
-2026-01-14 19:56:02 [INFO] Q: 因为他是一个瞎子，去外地医院把眼睛治好了，重见光明。但经过隧道时，隧道内一片漆黑，他以为自己又瞎了，绝望之下便跳车自杀。 -> A: 是
-2026-01-14 20:00:09 [INFO] 开始新的一局
-2026-01-14 20:00:42 [INFO] Q: 妹妹杀姐姐是主观因素吗？ -> A: 是
-2026-01-14 20:00:45 [INFO] 玩家放弃，汤底：妹妹以为 “举办葬礼” 就能再次见到那个男生，因此杀了姐姐，想通过姐姐的葬礼再次与男生相遇。
-2026-01-14 20:01:08 [INFO] 开始新的一局
-2026-01-14 20:01:57 [INFO] Q: 小刘死了吗 -> A: 否
-2026-01-14 20:02:22 [INFO] Q: 是本格吗？ -> A: 无关
-2026-01-14 20:03:03 [INFO] Q: 小丽生日愿望是对她自己不利的吗 -> A: 是
-2026-01-14 20:10:52 [INFO] Q: 这里面有人死吗 -> A: 是
-2026-01-14 20:20:43 [INFO] Commencing graceful shutdown. Waiting for active requests to complete
-2026-01-14 20:20:43 [INFO] Graceful shutdown complete
+2026-01-15 11:11:48 [INFO] Starting TurtleSoupAiApplication using Java 17.0.16 with PID 11824 (D:\JavaCode\turtle-soup-ai\target\classes started by Administrator in D:\JavaCode\turtle-soup-ai)
+2026-01-15 11:11:48 [INFO] No active profile set, falling back to 1 default profile: "default"
+2026-01-15 11:11:48 [INFO] Tomcat initialized with port 8080 (http)
+2026-01-15 11:11:48 [INFO] Initializing ProtocolHandler ["http-nio-8080"]
+2026-01-15 11:11:48 [INFO] Starting service [Tomcat]
+2026-01-15 11:11:48 [INFO] Starting Servlet engine: [Apache Tomcat/10.1.50]
+2026-01-15 11:11:48 [INFO] Initializing Spring embedded WebApplicationContext
+2026-01-15 11:11:48 [INFO] Root WebApplicationContext: initialization completed in 535 ms
+2026-01-15 11:11:48 [INFO] Adding welcome page: class path resource [static/index.html]
+2026-01-15 11:11:48 [INFO] Starting ProtocolHandler ["http-nio-8080"]
+2026-01-15 11:11:48 [INFO] Tomcat started on port 8080 (http) with context path '/'
+2026-01-15 11:11:48 [INFO] Started TurtleSoupAiApplication in 1.231 seconds (process running for 1.466)
+2026-01-15 11:12:00 [INFO] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-01-15 11:12:00 [INFO] Initializing Servlet 'dispatcherServlet'
+2026-01-15 11:12:00 [INFO] Completed initialization in 0 ms
+2026-01-15 11:12:23 [INFO] Q: 船长是想起来以前的事情了吗 -> A: 是
+2026-01-15 11:12:24 [INFO] 玩家放弃，汤底：很久很久以前，船长出海的时候，遇上了一场暴风雨，因为暴风雨的缘故，船只故障只能在海上漂浮，有些船员甚至因为暴风雨离世。后续漂浮受困的时间很长，大家都没有东西吃，就有船员为了让船长活下去，将已经死亡船员的肉煮成汤给船长喝，再骗他说这是海龟肉，于是船长就活了下来。多年后船长在店家吃到真正的海龟汤时，才会觉得味道很奇怪，重新思考过后才终于明白当时的事情，伤心之下便选择跳崖自杀了。
+2026-01-15 11:12:39 [INFO] 开始新的一局
+2026-01-15 11:12:40 [INFO] 开始新的一局
+2026-01-15 11:12:40 [INFO] 开始新的一局
+2026-01-15 11:12:41 [INFO] 开始新的一局
+2026-01-15 11:12:41 [INFO] 开始新的一局
+2026-01-15 11:12:42 [INFO] 开始新的一局
+2026-01-15 11:12:43 [INFO] 开始新的一局
+2026-01-15 11:22:54 [INFO] Commencing graceful shutdown. Waiting for active requests to complete
+2026-01-15 11:22:54 [INFO] Graceful shutdown complete
+2026-01-15 11:37:32 [INFO] Starting TurtleSoupAiApplication using Java 17.0.16 with PID 20624 (D:\JavaCode\turtle-soup-ai\target\classes started by Administrator in D:\JavaCode\turtle-soup-ai)
+2026-01-15 11:37:32 [INFO] No active profile set, falling back to 1 default profile: "default"
+2026-01-15 11:37:33 [INFO] Tomcat initialized with port 8080 (http)
+2026-01-15 11:37:33 [INFO] Initializing ProtocolHandler ["http-nio-8080"]
+2026-01-15 11:37:33 [INFO] Starting service [Tomcat]
+2026-01-15 11:37:33 [INFO] Starting Servlet engine: [Apache Tomcat/10.1.50]
+2026-01-15 11:37:33 [INFO] Initializing Spring embedded WebApplicationContext
+2026-01-15 11:37:33 [INFO] Root WebApplicationContext: initialization completed in 539 ms
+2026-01-15 11:37:33 [INFO] Adding welcome page: class path resource [static/index.html]
+2026-01-15 11:37:33 [INFO] Starting ProtocolHandler ["http-nio-8080"]
+2026-01-15 11:37:33 [INFO] Tomcat started on port 8080 (http) with context path '/'
+2026-01-15 11:37:33 [INFO] Started TurtleSoupAiApplication in 1.131 seconds (process running for 1.3)
+2026-01-15 11:39:10 [INFO] Commencing graceful shutdown. Waiting for active requests to complete
+2026-01-15 11:39:10 [INFO] Graceful shutdown complete
+2026-01-15 11:39:34 [INFO] Starting TurtleSoupAiApplication using Java 17.0.16 with PID 7344 (D:\JavaCode\turtle-soup-ai\target\classes started by Administrator in D:\JavaCode\turtle-soup-ai)
+2026-01-15 11:39:34 [INFO] No active profile set, falling back to 1 default profile: "default"
+2026-01-15 11:39:35 [INFO] Tomcat initialized with port 8080 (http)
+2026-01-15 11:39:35 [INFO] Initializing ProtocolHandler ["http-nio-8080"]
+2026-01-15 11:39:35 [INFO] Starting service [Tomcat]
+2026-01-15 11:39:35 [INFO] Starting Servlet engine: [Apache Tomcat/10.1.50]
+2026-01-15 11:39:35 [INFO] Initializing Spring embedded WebApplicationContext
+2026-01-15 11:39:35 [INFO] Root WebApplicationContext: initialization completed in 529 ms
+2026-01-15 11:39:35 [INFO] Adding welcome page: class path resource [static/index.html]
+2026-01-15 11:39:35 [INFO] Starting ProtocolHandler ["http-nio-8080"]
+2026-01-15 11:39:35 [INFO] Tomcat started on port 8080 (http) with context path '/'
+2026-01-15 11:39:35 [INFO] Started TurtleSoupAiApplication in 1.166 seconds (process running for 1.353)
+2026-01-15 11:39:46 [INFO] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-01-15 11:39:46 [INFO] Initializing Servlet 'dispatcherServlet'
+2026-01-15 11:39:46 [INFO] Completed initialization in 1 ms
+2026-01-15 11:40:23 [INFO] Q: 小明杀妈妈是主观因素吗？ -> A: 是
+2026-01-15 11:40:37 [INFO] Q: 小明杀妈妈是因为爸爸吗？ -> A: 否
+2026-01-15 11:41:00 [INFO] Q: 小明的爸爸是一个魔术师吗 -> A: 是
+2026-01-15 11:42:16 [INFO] Q: 小明以为“用刀切开人体后又接回” 的魔术是真的，拿妈妈尝试这项魔术，最后导致妈妈死亡爸爸崩溃了对吗？ -> A: 是
+2026-01-15 11:42:29 [INFO] Q: 小明的爸爸是一个魔术师，经常表演 “用刀切开人体后又接回” 的魔术，小明以为魔术是真的，便在爸爸不在时，拿妈妈尝试这项魔术。不会表演魔术的小明真的把妈妈切块了，却以为人体切开后能接回去。等到爸爸出现时，小明叫爸爸 “把妈妈变回来”，爸爸看到眼前的情景，在绝望中自杀了。 -> A: 是
+2026-01-15 11:42:49 [INFO] Q: 我胜利了吗 -> A: 否
+2026-01-15 11:43:00 [INFO] Commencing graceful shutdown. Waiting for active requests to complete
+2026-01-15 11:43:00 [INFO] Graceful shutdown complete
+2026-01-15 11:44:42 [INFO] Starting TurtleSoupAiApplication using Java 17.0.16 with PID 10092 (D:\JavaCode\turtle-soup-ai\target\classes started by Administrator in D:\JavaCode\turtle-soup-ai)
+2026-01-15 11:44:42 [INFO] No active profile set, falling back to 1 default profile: "default"
+2026-01-15 11:44:42 [INFO] Tomcat initialized with port 8080 (http)
+2026-01-15 11:44:42 [INFO] Initializing ProtocolHandler ["http-nio-8080"]
+2026-01-15 11:44:42 [INFO] Starting service [Tomcat]
+2026-01-15 11:44:42 [INFO] Starting Servlet engine: [Apache Tomcat/10.1.50]
+2026-01-15 11:44:42 [INFO] Initializing Spring embedded WebApplicationContext
+2026-01-15 11:44:42 [INFO] Root WebApplicationContext: initialization completed in 541 ms
+2026-01-15 11:44:42 [INFO] Adding welcome page: class path resource [static/index.html]
+2026-01-15 11:44:43 [INFO] Starting ProtocolHandler ["http-nio-8080"]
+2026-01-15 11:44:43 [INFO] Tomcat started on port 8080 (http) with context path '/'
+2026-01-15 11:44:43 [INFO] Started TurtleSoupAiApplication in 1.156 seconds (process running for 1.325)
+2026-01-15 11:44:45 [INFO] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-01-15 11:44:45 [INFO] Initializing Servlet 'dispatcherServlet'
+2026-01-15 11:44:45 [INFO] Completed initialization in 1 ms
+2026-01-15 11:44:47 [INFO] 开始新的一局
+2026-01-15 11:44:47 [INFO] 开始新的一局
+2026-01-15 11:44:48 [INFO] 开始新的一局
+2026-01-15 11:44:48 [INFO] 开始新的一局
+2026-01-15 11:44:48 [INFO] 开始新的一局
+2026-01-15 11:44:49 [INFO] 开始新的一局
+2026-01-15 11:44:49 [INFO] 开始新的一局
+2026-01-15 11:44:49 [INFO] 开始新的一局
+2026-01-15 11:44:50 [INFO] 开始新的一局
+2026-01-15 11:44:50 [INFO] 开始新的一局
+2026-01-15 11:44:51 [INFO] 开始新的一局
+2026-01-15 11:44:51 [INFO] 开始新的一局
+2026-01-15 11:44:51 [INFO] 开始新的一局
+2026-01-15 11:44:52 [INFO] 开始新的一局
+2026-01-15 11:44:52 [INFO] 开始新的一局
+2026-01-15 11:44:52 [INFO] 开始新的一局
+2026-01-15 11:44:53 [INFO] 开始新的一局
+2026-01-15 11:44:53 [INFO] 开始新的一局
+2026-01-15 11:44:55 [INFO] 开始新的一局
+2026-01-15 11:48:08 [INFO] Commencing graceful shutdown. Waiting for active requests to complete
+2026-01-15 11:48:08 [INFO] Graceful shutdown complete
+2026-01-15 11:48:32 [INFO] Starting TurtleSoupAiApplication using Java 17.0.16 with PID 19968 (D:\JavaCode\turtle-soup-ai\target\classes started by Administrator in D:\JavaCode\turtle-soup-ai)
+2026-01-15 11:48:32 [INFO] No active profile set, falling back to 1 default profile: "default"
+2026-01-15 11:48:32 [INFO] Tomcat initialized with port 8080 (http)
+2026-01-15 11:48:32 [INFO] Initializing ProtocolHandler ["http-nio-8080"]
+2026-01-15 11:48:32 [INFO] Starting service [Tomcat]
+2026-01-15 11:48:32 [INFO] Starting Servlet engine: [Apache Tomcat/10.1.50]
+2026-01-15 11:48:32 [INFO] Initializing Spring embedded WebApplicationContext
+2026-01-15 11:48:32 [INFO] Root WebApplicationContext: initialization completed in 548 ms
+2026-01-15 11:48:33 [INFO] Adding welcome page: class path resource [static/index.html]
+2026-01-15 11:48:33 [INFO] Starting ProtocolHandler ["http-nio-8080"]
+2026-01-15 11:48:33 [INFO] Tomcat started on port 8080 (http) with context path '/'
+2026-01-15 11:48:33 [INFO] Started TurtleSoupAiApplication in 1.223 seconds (process running for 1.4)
+2026-01-15 11:48:36 [INFO] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-01-15 11:48:36 [INFO] Initializing Servlet 'dispatcherServlet'
+2026-01-15 11:48:36 [INFO] Completed initialization in 0 ms
+2026-01-15 11:49:02 [INFO] Q: 我经常能在楼下看到那只黑猫，但由于工作出差的原因，只能投喂它。那天出差回来，我发现阳台上有很多死老鼠，下意识想到经常闹矛盾的邻居，随后便冲进他家动了手。伴随着惊呼声和警笛声，我看到了那只黑猫，它也在看着我，嘴里还叼着一只老鼠，才知道是黑猫叼老鼠到阳台，我错怪邻居并冲动犯了错。 -> A: 无关
+2026-01-15 11:49:14 [INFO] Commencing graceful shutdown. Waiting for active requests to complete
+2026-01-15 11:49:14 [INFO] Graceful shutdown complete
+2026-01-15 12:04:58 [INFO] Starting TurtleSoupAiApplication using Java 17.0.16 with PID 10400 (D:\JavaCode\turtle-soup-ai\target\classes started by Administrator in D:\JavaCode\turtle-soup-ai)
+2026-01-15 12:04:58 [INFO] No active profile set, falling back to 1 default profile: "default"
+2026-01-15 12:04:59 [INFO] Tomcat initialized with port 8080 (http)
+2026-01-15 12:04:59 [INFO] Initializing ProtocolHandler ["http-nio-8080"]
+2026-01-15 12:04:59 [INFO] Starting service [Tomcat]
+2026-01-15 12:04:59 [INFO] Starting Servlet engine: [Apache Tomcat/10.1.50]
+2026-01-15 12:04:59 [INFO] Initializing Spring embedded WebApplicationContext
+2026-01-15 12:04:59 [INFO] Root WebApplicationContext: initialization completed in 664 ms
+2026-01-15 12:04:59 [INFO] Adding welcome page: class path resource [static/index.html]
+2026-01-15 12:04:59 [INFO] Starting ProtocolHandler ["http-nio-8080"]
+2026-01-15 12:04:59 [INFO] Tomcat started on port 8080 (http) with context path '/'
+2026-01-15 12:04:59 [INFO] Started TurtleSoupAiApplication in 1.374 seconds (process running for 1.556)
+2026-01-15 12:05:13 [INFO] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-01-15 12:05:13 [INFO] Initializing Servlet 'dispatcherServlet'
+2026-01-15 12:05:13 [INFO] Completed initialization in 1 ms
+2026-01-15 12:05:42 [INFO] Q: 王子是被公主杀死的吗？ -> A: 是
+2026-01-15 12:06:04 [INFO] Q: 公主杀了王子后，用王子的血将自己的白色连衣裙染成红色，既避开了魔鬼 “白色不能通过” 的规则，又成功逃出鬼堡。 -> A: 无关
+2026-01-15 12:06:10 [INFO] 开始新的一局
+2026-01-15 12:06:13 [INFO] 开始新的一局
+2026-01-15 12:06:14 [INFO] 开始新的一局
+2026-01-15 12:06:15 [INFO] 开始新的一局
+2026-01-15 12:06:15 [INFO] 开始新的一局
+2026-01-15 12:06:16 [INFO] 开始新的一局
+2026-01-15 12:06:17 [INFO] 开始新的一局
+2026-01-15 12:06:17 [INFO] 开始新的一局
+2026-01-15 12:06:17 [INFO] 开始新的一局
+2026-01-15 12:06:18 [INFO] 开始新的一局
+2026-01-15 12:06:18 [INFO] 开始新的一局
+2026-01-15 12:06:18 [INFO] 开始新的一局
+2026-01-15 12:06:19 [INFO] 开始新的一局
+2026-01-15 12:06:19 [INFO] 开始新的一局
+2026-01-15 12:06:20 [INFO] 开始新的一局
+2026-01-15 12:06:20 [INFO] 开始新的一局
+2026-01-15 12:06:20 [INFO] 开始新的一局
+2026-01-15 12:06:20 [INFO] 开始新的一局
+2026-01-15 12:06:29 [INFO] 开始新的一局
+2026-01-15 12:06:31 [INFO] 开始新的一局
+2026-01-15 12:06:35 [INFO] 开始新的一局
+2026-01-15 12:06:52 [INFO] Commencing graceful shutdown. Waiting for active requests to complete
+2026-01-15 12:06:52 [INFO] Graceful shutdown complete
+2026-01-15 12:08:26 [INFO] Starting TurtleSoupAiApplication using Java 17.0.16 with PID 8 (D:\JavaCode\turtle-soup-ai\target\classes started by Administrator in D:\JavaCode\turtle-soup-ai)
+2026-01-15 12:08:26 [INFO] No active profile set, falling back to 1 default profile: "default"
+2026-01-15 12:08:27 [INFO] Tomcat initialized with port 8080 (http)
+2026-01-15 12:08:27 [INFO] Initializing ProtocolHandler ["http-nio-8080"]
+2026-01-15 12:08:27 [INFO] Starting service [Tomcat]
+2026-01-15 12:08:27 [INFO] Starting Servlet engine: [Apache Tomcat/10.1.50]
+2026-01-15 12:08:27 [INFO] Initializing Spring embedded WebApplicationContext
+2026-01-15 12:08:27 [INFO] Root WebApplicationContext: initialization completed in 662 ms
+2026-01-15 12:08:27 [INFO] Adding welcome page: class path resource [static/index.html]
+2026-01-15 12:08:27 [INFO] Starting ProtocolHandler ["http-nio-8080"]
+2026-01-15 12:08:27 [INFO] Tomcat started on port 8080 (http) with context path '/'
+2026-01-15 12:08:27 [INFO] Started TurtleSoupAiApplication in 1.355 seconds (process running for 1.542)
+2026-01-15 12:08:33 [INFO] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-01-15 12:08:33 [INFO] Initializing Servlet 'dispatcherServlet'
+2026-01-15 12:08:33 [INFO] Completed initialization in 0 ms
+2026-01-15 12:08:35 [INFO] 开始新的一局
+2026-01-15 12:09:16 [INFO] 开始新的一局
+2026-01-15 12:10:03 [INFO] 开始新的一局
+2026-01-15 12:10:03 [INFO] 开始新的一局
+2026-01-15 12:10:03 [INFO] 开始新的一局
+2026-01-15 12:10:03 [INFO] 开始新的一局
+2026-01-15 12:10:03 [INFO] 开始新的一局
+2026-01-15 12:10:04 [INFO] 开始新的一局
+2026-01-15 12:10:04 [INFO] 开始新的一局
+2026-01-15 12:10:05 [INFO] 开始新的一局
+2026-01-15 12:10:05 [INFO] 开始新的一局
+2026-01-15 12:10:05 [INFO] 开始新的一局
+2026-01-15 12:10:05 [INFO] 开始新的一局
+2026-01-15 12:10:06 [INFO] 开始新的一局
+2026-01-15 12:10:06 [INFO] 开始新的一局
+2026-01-15 12:10:07 [INFO] 开始新的一局
+2026-01-15 12:10:07 [INFO] 开始新的一局
+2026-01-15 12:10:08 [INFO] 开始新的一局
+2026-01-15 12:30:36 [INFO] Commencing graceful shutdown. Waiting for active requests to complete
+2026-01-15 12:30:36 [INFO] Graceful shutdown complete
+2026-01-15 12:42:21 [INFO] Starting TurtleSoupAiApplication using Java 17.0.16 with PID 14592 (D:\JavaCode\turtle-soup-ai\target\classes started by Administrator in D:\JavaCode\turtle-soup-ai)
+2026-01-15 12:42:21 [INFO] No active profile set, falling back to 1 default profile: "default"
+2026-01-15 12:42:22 [INFO] Tomcat initialized with port 8080 (http)
+2026-01-15 12:42:22 [INFO] Initializing ProtocolHandler ["http-nio-8080"]
+2026-01-15 12:42:22 [INFO] Starting service [Tomcat]
+2026-01-15 12:42:22 [INFO] Starting Servlet engine: [Apache Tomcat/10.1.50]
+2026-01-15 12:42:22 [INFO] Initializing Spring embedded WebApplicationContext
+2026-01-15 12:42:22 [INFO] Root WebApplicationContext: initialization completed in 656 ms
+2026-01-15 12:42:22 [INFO] Adding welcome page: class path resource [static/index.html]
+2026-01-15 12:42:22 [INFO] Starting ProtocolHandler ["http-nio-8080"]
+2026-01-15 12:42:22 [INFO] Tomcat started on port 8080 (http) with context path '/'
+2026-01-15 12:42:22 [INFO] Started TurtleSoupAiApplication in 1.375 seconds (process running for 1.558)
+2026-01-15 12:42:32 [INFO] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-01-15 12:42:32 [INFO] Initializing Servlet 'dispatcherServlet'
+2026-01-15 12:42:32 [INFO] Completed initialization in 0 ms
+2026-01-15 12:43:42 [INFO] Q: 男人打嗝？ -> A: 是
+2026-01-15 12:44:33 [INFO] 开始新的一局
+2026-01-15 12:44:35 [INFO] 开始新的一局
+2026-01-15 12:44:35 [INFO] 开始新的一局
+2026-01-15 12:44:36 [INFO] 开始新的一局
+2026-01-15 12:44:36 [INFO] 开始新的一局
+2026-01-15 12:44:36 [INFO] 开始新的一局
+2026-01-15 12:44:37 [INFO] 开始新的一局
+2026-01-15 12:44:37 [INFO] 开始新的一局
+2026-01-15 12:44:37 [INFO] 开始新的一局
+2026-01-15 12:44:38 [INFO] 开始新的一局
+2026-01-15 12:44:38 [INFO] 开始新的一局
+2026-01-15 12:44:39 [INFO] 开始新的一局
+2026-01-15 12:44:39 [INFO] 开始新的一局
+2026-01-15 12:44:40 [INFO] 开始新的一局
+2026-01-15 12:44:40 [INFO] 开始新的一局
+2026-01-15 12:44:41 [INFO] 开始新的一局
+2026-01-15 12:44:41 [INFO] 开始新的一局
+2026-01-15 12:44:41 [INFO] 开始新的一局
+2026-01-15 12:44:44 [INFO] 开始新的一局
+2026-01-15 12:44:46 [INFO] 开始新的一局
+2026-01-15 12:44:46 [INFO] 开始新的一局
+2026-01-15 12:45:40 [INFO] 玩家放弃，汤底：哥哥吃多了，肚子撑大了，弟弟打趣说你好像怀孕了，哥哥说怀你妈。
+2026-01-15 12:45:43 [INFO] 开始新的一局
+2026-01-15 12:46:07 [INFO] 开始新的一局
+2026-01-15 12:46:15 [INFO] Commencing graceful shutdown. Waiting for active requests to complete
+2026-01-15 12:46:15 [INFO] Graceful shutdown complete

@@ -57,12 +57,40 @@ public class GameService {
         startNewGame();
     }
 
+    private List<GameSession> unplayedSoups() {
+        return soupPool.stream()
+                .filter(s -> !s.isPlayed()) // 过滤出未被玩过的汤
+                .toList();
+    }
+
     /** 开始新的一局 */
     public void startNewGame() {
-        current = soupPool.get(
-                ThreadLocalRandom.current().nextInt(soupPool.size())
+        List<GameSession> candidates = unplayedSoups();
+
+        // 所有汤都玩完了
+        if (candidates.isEmpty()) {
+            current = null;
+            return;
+        }
+
+        // 随机选一个未玩过的汤
+        GameSession selected = candidates.get(
+                ThreadLocalRandom.current().nextInt(candidates.size())
         );
-        current.setFinished(false);
+
+        // 标记该汤已被玩过
+        selected.setPlayed(true);
+        // 重置游戏状态
+        selected.setFinished(false);
+        selected.setWin(false);
+        selected.setFinalStatement(null);
+        selected.getLogs().clear();
+
+        current = selected;
+    }
+
+    public boolean allSoupsPlayed() {
+        return unplayedSoups().isEmpty();
     }
 
     public GameSession getCurrentSession() {
@@ -82,5 +110,12 @@ public class GameService {
 
     public void logGuess(String statement) {
         current.addLog("[GUESS] " + statement);
+    }
+
+    public void resetAll() {
+        // 同时重置每个汤的played字段（适配你之前的GameSession逻辑）
+        soupPool.forEach(soup -> soup.setPlayed(false));
+        // 开始新的一局
+        startNewGame();
     }
 }

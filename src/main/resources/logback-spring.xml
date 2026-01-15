@@ -21,7 +21,7 @@
 
     <root level="INFO">
         <!-- 控制台日志，不想要可以注释掉 -->
-        <!-- <appender-ref ref="CONSOLE"/> -->
+        <appender-ref ref="CONSOLE"/>
         <appender-ref ref="FILE"/>
     </root>
 
