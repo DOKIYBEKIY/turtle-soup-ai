@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8" />
+    <title>海龟汤 · Turtle Soup AI</title>
+    <style>
+        body { font-family: Arial, sans-serif; background:#f5f5f5; padding:20px }
+        .card { background:white; padding:20px; border-radius:8px; max-width:700px; margin:auto }
+        h1 { margin-top:0 }
+        textarea { width:100%; height:80px }
+        button { margin-top:10px; padding:8px 16px }
+        .log { margin-top:20px; background:#fafafa; padding:10px; border:1px solid #ddd; height:200px; overflow:auto }
+    </style>
+</head>
+<body>
+<div class="card">
+    <h1>海龟汤游戏</h1>
+    <p><strong>汤面：</strong></p>
+    <p id="soupSurface">加载中...</p>
+
+    <label for="question">问题：</label>
+    <textarea id="question" placeholder="请输入你的问题"></textarea><br/>
+    <button onclick="ask()">提问</button>
+    <button onclick="giveUp()">放弃</button>
+    <button onclick="newGame()">新的一局</button>
+
+    <div class="log" id="log"></div>
+</div>
+
+<script>
+    function log(text) {
+        const div = document.getElementById('log');
+        div.innerHTML += text + '<br/>';
+        div.scrollTop = div.scrollHeight;
+    }
+
+    function loadStart() {
+        fetch('/game/start')
+            .then(r => r.text())
+            .then(t => {
+                document.getElementById('soupSurface').innerText = t;
+                document.getElementById('log').innerHTML = '';
+                log('游戏开始');
+            });
+    }
+
+    function ask() {
+        const q = document.getElementById('question').value;
+        if (!q) return;
+
+        fetch('/game/ask', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+            body: 'question=' + encodeURIComponent(q)
+        })
+        .then(r => r.text())
+        .then(a => {
+            log('Q: ' + q);
+            log('A: ' + a);
+            document.getElementById('question').value = '';
+        });
+    }
+
+    function giveUp() {
+        fetch('/game/giveup', { method: 'POST' })
+            .then(r => r.text())
+            .then(t => {
+                log('放弃，汤底：' + t);
+            });
+    }
+
+    function newGame() {
+        fetch('/game/new', { method: 'POST' })
+            .then(r => r.text())
+            .then(t => {
+                document.getElementById('soupSurface').innerText = t;
+                document.getElementById('log').innerHTML = '';
+                log('新的一局开始');
+            });
+    }
+
+    loadStart();
+</script>
+</body>
+</html>

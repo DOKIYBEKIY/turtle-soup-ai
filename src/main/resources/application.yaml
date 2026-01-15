@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: turtle-soup-ai
+
+server:
+  port: 8080  # 服务端口
+ai:
+  qwen:
+    endpoint: https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions
+    model: qwen-turbo
+
+logging:
+  level:
+    root: INFO
