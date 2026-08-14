@@ -3,77 +3,99 @@ package com.example.turtle_soup_ai.controller;
 import com.example.turtle_soup_ai.domain.GameSession;
 import com.example.turtle_soup_ai.service.AiService;
 import com.example.turtle_soup_ai.service.GameService;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-import org.springframework.http.ResponseEntity;
+import com.example.turtle_soup_ai.web.ApiResponse;
+import com.example.turtle_soup_ai.web.SessionView;
 import org.springframework.web.bind.annotation.*;
 
+/**
+ * 游戏接口：统一返回 ApiResponse 结构。
+ */
 @RestController
 @RequestMapping("/game")
 public class GameController {
 
     private final GameService gameService;
     private final AiService aiService;
-    private static final Logger logger = LoggerFactory.getLogger(GameController.class);
 
     public GameController(GameService gameService, AiService aiService) {
         this.gameService = gameService;
         this.aiService = aiService;
     }
 
+    /** 获取当前对局的汤面与进度 */
     @GetMapping("/start")
-    public ResponseEntity<String> start() {
-        if (gameService.getCurrentSession() == null) {
-            return ResponseEntity.ok("🐢 你已经喝完了所有海龟汤！");
-        }
-        return ResponseEntity.ok(gameService.getCurrentSession().getSoupSurface());
+    public ApiResponse<SessionView> start() {
+        return ApiResponse.ok(sessionView());
     }
 
+    /** 玩家提问 */
     @PostMapping("/ask")
-    public String ask(@RequestParam String question) {
-        String answer = aiService.answer(question, gameService.getCurrentSession());
-        logger.info("Q: {} -> A: {}", question, answer);
-        return answer;
-    }
-
-    @PostMapping("/giveup")
-    public String giveUp() {
-        gameService.finishGame();
-        String bottom = gameService.getCurrentSession().getSoupBottom();
-        logger.info("玩家放弃，汤底：{}", bottom);
-        return bottom;
-    }
-
-    @PostMapping("/new")
-    public ResponseEntity<String> newGame() {
-        gameService.startNewGame();
-        logger.info("开始新的一局");
-
-        if (gameService.getCurrentSession() == null) {
-            return ResponseEntity.ok("🐢 你已经喝完了所有海龟汤！");
+    public ApiResponse<String> ask(@RequestParam String question) {
+        if (question == null || question.isBlank()) {
+            throw new IllegalArgumentException("问题不能为空");
         }
-        return ResponseEntity.ok(gameService.getCurrentSession().getSoupSurface());
+        GameSession session = gameService.getCurrentSession();
+        String answer = aiService.answer(question, session);
+        gameService.logAsk(question, answer);
+        return ApiResponse.ok(answer);
     }
 
-    @PostMapping("/guess")
-    public ResponseEntity<String> guess(@RequestParam String statement) {
+    /** 放弃：返回汤底 */
+    @PostMapping("/giveup")
+    public ApiResponse<String> giveUp() {
         GameSession session = gameService.getCurrentSession();
-        boolean win = aiService.checkWin(statement, session.getSoupBottom()); // 注意：这里应该是getSoupBottom()（你的GameSession里是这个方法）
+        if (session == null) {
+            throw new IllegalStateException("当前没有进行中的对局");
+        }
+        gameService.logGiveUp();
+        gameService.finishGame();
+        return ApiResponse.ok(session.getSoupBottom());
+    }
 
+    /** 新的一局 */
+    @PostMapping("/new")
+    public ApiResponse<SessionView> newGame() {
+        gameService.startNewGame();
+        return ApiResponse.ok(sessionView());
+    }
+
+    /** 玩家猜测（提交最终陈述） */
+    @PostMapping("/guess")
+    public ApiResponse<Boolean> guess(@RequestParam String statement) {
+        if (statement == null || statement.isBlank()) {
+            throw new IllegalArgumentException("猜测内容不能为空");
+        }
+        GameSession session = gameService.getCurrentSession();
+        if (session == null) {
+            throw new IllegalStateException("当前没有进行中的对局");
+        }
+
+        boolean win = aiService.checkWin(statement, session.getSoupBottom());
         if (win) {
             gameService.markWin(statement);
-            return ResponseEntity.ok("WIN");
         } else {
             gameService.logGuess(statement);
-            return ResponseEntity.ok("NOT_YET");
         }
-
+        return ApiResponse.ok(win);
     }
 
-    //重置题库接口
+    /** 重置题库 */
     @PostMapping("/reset")
-    public ResponseEntity<Void> reset() {
+    public ApiResponse<Void> reset() {
         gameService.resetAll();
-        return ResponseEntity.ok().build();
+        return ApiResponse.ok(null);
+    }
+
+    private SessionView sessionView() {
+        GameSession session = gameService.getCurrentSession();
+        if (session == null) {
+            return new SessionView(null, true, gameService.getPlayedCount(), gameService.getTotalCount());
+        }
+        return new SessionView(
+                session.getSoupSurface(),
+                false,
+                gameService.getPlayedCount(),
+                gameService.getTotalCount()
+        );
     }
 }

@@ -4,6 +4,11 @@ target/
 !**/src/main/**/target/
 !**/src/test/**/target/
 
+# 运行日志（不再提交到仓库）
+logs/
+*.log
+game-log*.txt
+
 ### STS ###
 .apt_generated
 .classpath

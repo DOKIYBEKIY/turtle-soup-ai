@@ -1,163 +1,643 @@
 <!DOCTYPE html>
 <html lang="zh">
 <head>
-    <meta charset="UTF-8" />
-    <title>海龟汤 · Turtle Soup AI</title>
-    <style>
-        body { font-family: Arial, sans-serif; background:#f5f5f5; padding:20px }
-        .card { background:white; padding:20px; border-radius:8px; max-width:700px; margin:auto }
-        h1 { margin-top:0 }
-        textarea { width:100%; height:80px }
-        button { margin-top:10px; padding:8px 16px }
-        .log { margin-top:20px; background:#fafafa; padding:10px; border:1px solid #ddd; height:200px; overflow:auto }
-    </style>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>海龟汤 · Turtle Soup AI</title>
+<style>
+  :root {
+    --ink: #16121f;
+    --ink-2: #211b30;
+    --paper: #f1e6cf;
+    --paper-ink: #2b2436;
+    --seal-red: #d9554b;
+    --seal-blue: #7ea3b8;
+    --seal-grey: #9a938a;
+    --gold: #d9a441;
+    --text: #e8e2d6;
+    --text-dim: #a79f92;
+    --danger: #e0605a;
+  }
+
+  * { box-sizing: border-box; }
+
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: var(--ink);
+    color: var(--text);
+    font-family: "Noto Sans SC", "PingFang SC", "Microsoft YaHei", system-ui, sans-serif;
+    min-height: 100%;
+  }
+
+  body {
+    background:
+      radial-gradient(1100px 500px at 50% -10%, rgba(217, 164, 65, 0.10), transparent 60%),
+      radial-gradient(800px 400px at 85% 110%, rgba(217, 85, 75, 0.06), transparent 60%),
+      var(--ink);
+    display: flex;
+    justify-content: center;
+    padding: 24px 14px 60px;
+  }
+
+  .wrap {
+    width: 100%;
+    max-width: 720px;
+  }
+
+  header {
+    text-align: center;
+    margin: 12px 0 22px;
+  }
+
+  .eyebrow {
+    font-size: 0.72rem;
+    letter-spacing: 0.35em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 6px;
+  }
+
+  h1 {
+    font-family: "Noto Serif SC", "Songti SC", "STSong", serif;
+    font-size: 2rem;
+    letter-spacing: 0.12em;
+    margin: 0 0 8px;
+    color: var(--paper);
+  }
+
+  .progress {
+    font-size: 0.82rem;
+    color: var(--text-dim);
+  }
+
+  .surface-card {
+    position: relative;
+    background: var(--paper);
+    color: var(--paper-ink);
+    border-radius: 10px;
+    padding: 22px 24px;
+    box-shadow: 0 18px 50px rgba(0, 0, 0, 0.45), 0 0 0 1px rgba(217, 164, 65, 0.18);
+  }
+
+  .surface-card::before {
+    content: "汤面";
+    position: absolute;
+    top: -11px;
+    left: 18px;
+    background: var(--ink-2);
+    color: var(--gold);
+    font-size: 0.72rem;
+    letter-spacing: 0.2em;
+    padding: 2px 10px;
+    border-radius: 20px;
+    border: 1px solid rgba(217, 164, 65, 0.35);
+  }
+
+  #soupSurface {
+    margin: 0;
+    font-family: "Noto Serif SC", "Songti SC", "STSong", serif;
+    font-size: 1.18rem;
+    line-height: 1.9;
+    letter-spacing: 0.03em;
+    white-space: pre-wrap;
+  }
+
+  .controls {
+    margin-top: 18px;
+  }
+
+  textarea {
+    width: 100%;
+    min-height: 78px;
+    resize: vertical;
+    background: var(--ink-2);
+    color: var(--text);
+    border: 1px solid rgba(232, 226, 214, 0.18);
+    border-radius: 10px;
+    padding: 12px 14px;
+    font-size: 1rem;
+    line-height: 1.6;
+    font-family: inherit;
+  }
+
+  textarea:focus {
+    outline: none;
+    border-color: var(--gold);
+    box-shadow: 0 0 0 3px rgba(217, 164, 65, 0.18);
+  }
+
+  textarea.input-error {
+    border-color: var(--danger);
+    animation: shake 0.3s;
+  }
+
+  @keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-4px); }
+    75% { transform: translateX(4px); }
+  }
+
+  .btn-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 12px;
+  }
+
+  button {
+    font-family: inherit;
+    font-size: 0.95rem;
+    padding: 10px 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 1px solid transparent;
+    transition: transform 0.12s ease, background 0.15s ease, border-color 0.15s ease;
+  }
+
+  button:focus-visible {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(217, 164, 65, 0.35);
+  }
+
+  button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+
+  .btn-primary {
+    background: var(--gold);
+    color: #221a08;
+    font-weight: 600;
+  }
+
+  .btn-primary:hover:not(:disabled) { background: #e6b456; transform: translateY(-1px); }
+
+  .btn-ghost {
+    background: transparent;
+    color: var(--text);
+    border-color: rgba(232, 226, 214, 0.25);
+  }
+
+  .btn-ghost:hover:not(:disabled) { border-color: var(--text-dim); }
+
+  .btn-danger {
+    background: transparent;
+    color: var(--danger);
+    border-color: rgba(224, 96, 90, 0.4);
+  }
+
+  .btn-danger:hover:not(:disabled) { background: rgba(224, 96, 90, 0.12); }
+
+  .log {
+    margin-top: 26px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    padding-bottom: 8px;
+  }
+
+  .log-empty {
+    color: var(--text-dim);
+    font-size: 0.9rem;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  .row {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .row.q { align-items: flex-end; }
+  .row.a { align-items: flex-start; }
+
+  .bubble {
+    max-width: 86%;
+    padding: 10px 16px;
+    border-radius: 14px;
+    font-size: 0.98rem;
+    line-height: 1.6;
+    word-break: break-word;
+  }
+
+  .q .bubble {
+    background: var(--ink-2);
+    border: 1px solid rgba(232, 226, 214, 0.16);
+    border-bottom-right-radius: 4px;
+  }
+
+  .q-label {
+    font-size: 0.72rem;
+    color: var(--text-dim);
+    margin-bottom: 3px;
+    letter-spacing: 0.1em;
+  }
+
+  .a { min-height: 52px; }
+
+  .seal {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 3.4em;
+    padding: 0.32em 0.55em;
+    border: 2px solid currentColor;
+    border-radius: 8px;
+    font-family: "Noto Serif SC", "Songti SC", "STSong", serif;
+    font-weight: 700;
+    font-size: 1.28rem;
+    letter-spacing: 0.08em;
+    position: relative;
+    transform: rotate(-2deg);
+    background: rgba(255, 255, 255, 0.03);
+    animation: stamp 0.28s ease-out;
+  }
+
+  .seal::after {
+    content: "";
+    position: absolute;
+    inset: 3px;
+    border: 1px dashed currentColor;
+    border-radius: 5px;
+    opacity: 0.35;
+  }
+
+  .seal.yes { color: var(--seal-red); }
+  .seal.no  { color: var(--seal-blue); }
+  .seal.na  { color: var(--seal-grey); }
+
+  @keyframes stamp {
+    from { transform: rotate(-2deg) scale(1.7); opacity: 0; }
+    to   { transform: rotate(-2deg) scale(1);   opacity: 1; }
+  }
+
+  .reveal {
+    background: rgba(217, 164, 65, 0.08);
+    border: 1px solid rgba(217, 164, 65, 0.35);
+    color: var(--paper);
+    border-radius: 12px;
+    padding: 14px 16px;
+    font-size: 0.95rem;
+    line-height: 1.8;
+  }
+
+  .reveal b {
+    color: var(--gold);
+    display: block;
+    font-size: 0.78rem;
+    letter-spacing: 0.15em;
+    margin-bottom: 4px;
+  }
+
+  .sys {
+    align-self: center;
+    font-size: 0.8rem;
+    color: var(--text-dim);
+    letter-spacing: 0.05em;
+  }
+
+  .sys.err { color: var(--danger); }
+
+  .modal-mask {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(10, 8, 16, 0.78);
+    backdrop-filter: blur(3px);
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    z-index: 10;
+  }
+
+  .modal-mask.show { display: flex; }
+
+  .modal {
+    background: var(--ink-2);
+    border: 1px solid rgba(217, 164, 65, 0.3);
+    border-radius: 14px;
+    padding: 30px 26px;
+    width: 100%;
+    max-width: 340px;
+    text-align: center;
+    box-shadow: 0 24px 70px rgba(0, 0, 0, 0.6);
+  }
+
+  .modal h2 {
+    font-family: "Noto Serif SC", "Songti SC", "STSong", serif;
+    font-size: 1.5rem;
+    margin: 0 0 10px;
+    color: var(--paper);
+    letter-spacing: 0.08em;
+  }
+
+  .modal p {
+    color: var(--text-dim);
+    font-size: 0.95rem;
+    line-height: 1.7;
+    margin: 0 0 22px;
+  }
+
+  .modal .btn-row { justify-content: center; }
+
+  footer {
+    margin-top: 34px;
+    text-align: center;
+    color: var(--text-dim);
+    font-size: 0.75rem;
+    letter-spacing: 0.08em;
+  }
+
+  @media (max-width: 520px) {
+    h1 { font-size: 1.7rem; }
+    #soupSurface { font-size: 1.05rem; }
+    .btn-row button { flex: 1 1 40%; }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .seal { animation: none; }
+    button { transition: none; }
+    textarea.input-error { animation: none; }
+  }
+</style>
 </head>
 <body>
-<div class="card">
-    <h1>海龟汤游戏</h1>
-    <p><strong>汤面：</strong></p>
-    <p id="soupSurface">加载中...</p>
+<div class="wrap">
 
-    <label for="question">问题：</label>
-    <textarea id="question" placeholder="请输入你的问题"></textarea><br/>
-    <button onclick="ask()">提问</button>
-    <button onclick="giveUp()">放弃</button>
-    <button onclick="newGame()">新的一局</button>
-    <button onclick="guess()">我知道答案了</button>
+  <header>
+    <div class="eyebrow">Turtle Soup · 情景推理</div>
+    <h1>海龟汤</h1>
+    <div class="progress" id="progress">准备开汤…</div>
+  </header>
 
-    <div class="log" id="log"></div>
+  <section class="surface-card">
+    <p id="soupSurface">正在上汤…</p>
+  </section>
+
+  <section class="controls">
+    <textarea id="question" placeholder="向主持人提问，例如：凶手是熟人吗？"></textarea>
+    <div class="btn-row">
+      <button class="btn-primary" id="btnAsk" onclick="ask()">提问</button>
+      <button class="btn-primary" id="btnGuess" onclick="guess()">我知道答案了</button>
+      <button class="btn-ghost" id="btnGiveUp" onclick="giveUp()">放弃</button>
+      <button class="btn-ghost" id="btnNew" onclick="newGame()">新的一局</button>
+    </div>
+  </section>
+
+  <section class="log" id="log">
+    <div class="log-empty">汤已上桌，开始你的推理吧。</div>
+  </section>
+
+  <footer>深夜汤馆 · 只回答 是 / 否 / 无关</footer>
 </div>
 
-<!-- 胜利弹窗（默认隐藏） -->
-<div id="winModal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.5);">
-    <div style="background:#fff; width:300px; margin:100px auto; padding:20px; text-align:center;">
-        <h2>🎉 恭喜胜利！</h2>
-        <p>你成功复盘了真相。</p>
-        <button onclick="newGame()">新的一局</button>
-        <button onclick="viewHistory()">历史回顾</button>
+<div class="modal-mask" id="winModal">
+  <div class="modal">
+    <h2>🎉 恭喜破案</h2>
+    <p>你成功复盘了真相。</p>
+    <div class="btn-row">
+      <button class="btn-primary" onclick="newGame()">新的一局</button>
     </div>
+  </div>
 </div>
 
-<!-- 喝完所有汤弹窗 -->
-<div id="endModal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.5);">
-    <div style="background:#fff; width:320px; margin:100px auto; padding:20px; text-align:center;">
-        <h2>🥳 全部喝完啦！</h2>
-        <p>你已经体验了所有海龟汤题目。</p>
-        <button onclick="closeEndModal()">确定</button>
-        <button onclick="restartAll()">重新来一轮</button>
+<div class="modal-mask" id="endModal">
+  <div class="modal">
+    <h2>🍵 全部喝完啦</h2>
+    <p>你已经体验了所有海龟汤题目。</p>
+    <div class="btn-row">
+      <button class="btn-primary" onclick="resetAll()">重新来一轮</button>
+      <button class="btn-ghost" onclick="closeEndModal()">关闭</button>
     </div>
+  </div>
 </div>
 
 <script>
-    function log(text) {
-        const div = document.getElementById('log');
-        div.innerHTML += text + '<br/>';
-        div.scrollTop = div.scrollHeight;
+  const input = document.getElementById('question');
+  const logEl = document.getElementById('log');
+  const surfaceEl = document.getElementById('soupSurface');
+  const progressEl = document.getElementById('progress');
+
+  const btnAsk = document.getElementById('btnAsk');
+  const btnGuess = document.getElementById('btnGuess');
+  const btnGiveUp = document.getElementById('btnGiveUp');
+  const btnNew = document.getElementById('btnNew');
+
+  async function api(path, opts) {
+    const r = await fetch(path, opts);
+    let j;
+    try { j = await r.json(); }
+    catch (e) { throw new Error('服务器返回异常（HTTP ' + r.status + '）'); }
+    if (!j || j.success !== true) {
+      throw new Error((j && j.message) || '请求失败');
     }
+    return j.data;
+  }
 
-    function loadStart() {
-        fetch('/game/start')
-            .then(r => r.text())
-            .then(t => {
-                if (t.includes("喝完")) {
-                  showEndModal();
-                   document.getElementById('soupSurface').innerText = "所有题目已完成";
-                   return;
-                }
-                document.getElementById('soupSurface').innerText = t;
-                document.getElementById('log').innerHTML = '';
-                log('游戏开始');
-            });
+  function post(path, params) {
+    const body = new URLSearchParams(params).toString();
+    return api(path, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body
+    });
+  }
+
+  function setButtons(on) {
+    [btnAsk, btnGuess, btnGiveUp, btnNew].forEach(b => b.disabled = !on);
+  }
+
+  function setSurface(text) {
+    surfaceEl.textContent = text;
+  }
+
+  function setProgress(played, total) {
+    progressEl.textContent = '第 ' + played + ' 道 · 共 ' + total + ' 道';
+  }
+
+  function clearLog() {
+    logEl.innerHTML = '';
+  }
+
+  function addQuestion(text) {
+    const row = document.createElement('div');
+    row.className = 'row q';
+    row.innerHTML =
+      '<div class="q-label">你的提问</div>' +
+      '<div class="bubble"></div>';
+    row.querySelector('.bubble').textContent = text;
+    logEl.appendChild(row);
+    scrollLog();
+  }
+
+  function addAnswer(answer) {
+    const map = { '是': 'yes', '否': 'no' };
+    const cls = map[answer] || 'na';
+    const row = document.createElement('div');
+    row.className = 'row a';
+    const seal = document.createElement('span');
+    seal.className = 'seal ' + cls;
+    seal.textContent = answer;
+    row.appendChild(seal);
+    logEl.appendChild(row);
+    scrollLog();
+  }
+
+  function addReveal(bottom) {
+    const row = document.createElement('div');
+    row.className = 'row a';
+    row.innerHTML = '<div class="reveal"><b>汤底揭晓</b></div>';
+    row.querySelector('.reveal b').after(document.createTextNode(bottom));
+    logEl.appendChild(row);
+    scrollLog();
+  }
+
+  function addSystem(text, isErr) {
+    const row = document.createElement('div');
+    row.className = 'sys' + (isErr ? ' err' : '');
+    row.textContent = text;
+    logEl.appendChild(row);
+    scrollLog();
+  }
+
+  function scrollLog() {
+    window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
+  }
+
+  function flashInput() {
+    input.classList.add('input-error');
+    input.placeholder = '先写点什么再问吧';
+    setTimeout(() => input.classList.remove('input-error'), 350);
+  }
+
+  function showWinModal() {
+    document.getElementById('winModal').classList.add('show');
+  }
+
+  function showEndModal() {
+    document.getElementById('endModal').classList.add('show');
+  }
+
+  function closeEndModal() {
+    document.getElementById('endModal').classList.remove('show');
+  }
+
+  function hideModals() {
+    document.getElementById('winModal').classList.remove('show');
+    document.getElementById('endModal').classList.remove('show');
+  }
+
+  async function loadStart() {
+    try {
+      const v = await api('/game/start');
+      if (v.allPlayed) {
+        setSurface('所有题目已完成');
+        progressEl.textContent = '全部喝完';
+        showEndModal();
+        return;
+      }
+      setSurface(v.surface);
+      setProgress(v.played, v.total);
+      clearLog();
+      addSystem('汤已上桌，开始你的推理吧。');
+    } catch (e) {
+      addSystem(e.message, true);
     }
+  }
 
-    function ask() {
-        const q = document.getElementById('question').value;
-        if (!q) return;
-
-        fetch('/game/ask', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-            body: 'question=' + encodeURIComponent(q)
-        })
-        .then(r => r.text())
-        .then(a => {
-            log('Q: ' + q);
-            log('A: ' + a);
-            document.getElementById('question').value = '';
-        });
+  async function ask() {
+    const q = input.value.trim();
+    if (!q) { flashInput(); return; }
+    addQuestion(q);
+    input.value = '';
+    setButtons(false);
+    try {
+      const a = await post('/game/ask', { question: q });
+      addAnswer(a);
+    } catch (e) {
+      addSystem(e.message, true);
+    } finally {
+      setButtons(true);
+      input.focus();
     }
+  }
 
-    function giveUp() {
-        fetch('/game/giveup', { method: 'POST' })
-            .then(r => r.text())
-            .then(t => {
-                log('放弃，汤底：' + t);
-            });
+  async function guess() {
+    const s = input.value.trim();
+    if (!s) { flashInput(); return; }
+    addQuestion(s);
+    input.value = '';
+    setButtons(false);
+    try {
+      const win = await post('/game/guess', { statement: s });
+      if (win) {
+        addSystem('🎉 真相大白！');
+        showWinModal();
+      } else {
+        addSystem('还没完全对，再想想关键原因。');
+      }
+    } catch (e) {
+      addSystem(e.message, true);
+    } finally {
+      setButtons(true);
+      input.focus();
     }
+  }
 
-    function newGame() {
-        fetch('/game/new', { method: 'POST' })
-            .then(r => r.text())
-            .then(t => {
-                if (t.includes("喝完")) {
-                  showEndModal();
-                  return;
-                }
-                document.getElementById('soupSurface').innerText = t;
-                document.getElementById('log').innerHTML = '';
-                document.getElementById('winModal').style.display = "none";
-                log('新的一局开始');
-            });
+  async function giveUp() {
+    setButtons(false);
+    try {
+      const bottom = await post('/game/giveup');
+      addReveal(bottom);
+    } catch (e) {
+      addSystem(e.message, true);
+    } finally {
+      setButtons(true);
     }
+  }
 
-    function guess() {
-        const statement = document.getElementById('question').value;
-        if (!statement) return;
-
-        fetch('/game/guess', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-            body: 'statement=' + encodeURIComponent(statement)
-        })
-        .then(res => res.text())
-        .then(result => {
-            log('Q(猜测): ' + statement);
-            if (result === "WIN") {
-                showWinModal(); // 显示胜利弹窗
-            } else {
-                log('A: 还没完全对，再想想吧。');
-            }
-            document.getElementById('question').value = '';
-        });
+  async function newGame() {
+    hideModals();
+    setButtons(false);
+    try {
+      const v = await post('/game/new');
+      if (v.allPlayed) {
+        showEndModal();
+        return;
+      }
+      setSurface(v.surface);
+      setProgress(v.played, v.total);
+      clearLog();
+      addSystem('新的一局开始');
+    } catch (e) {
+      addSystem(e.message, true);
+    } finally {
+      setButtons(true);
     }
+  }
 
-    function showWinModal() {
-        document.getElementById('winModal').style.display = "block";
-        log('🎉 恭喜胜利！');
+  async function resetAll() {
+    closeEndModal();
+    setButtons(false);
+    try {
+      await post('/game/reset');
+      await loadStart();
+    } catch (e) {
+      addSystem(e.message, true);
+    } finally {
+      setButtons(true);
     }
+  }
 
-    function viewHistory() {
-        alert("🐢 历史回顾功能即将上线！");
+  input.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter' && !e.shiftKey) {
+      e.preventDefault();
+      ask();
     }
+  });
 
-    function showEndModal() {
-        document.getElementById('endModal').style.display = "block";
-    }
-
-    function closeEndModal() {
-        document.getElementById('endModal').style.display = "none";
-    }
-
-    function restartAll() {
-        fetch('/game/reset', { method: 'POST' })
-            .then(() => {
-                document.getElementById('endModal').style.display = "none";
-                loadStart();
-            });
-    }
-
-
-    loadStart();
+  loadStart();
 </script>
 </body>
 </html>
