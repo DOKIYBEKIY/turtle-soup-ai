@@ -16,6 +16,46 @@
 
 ---
 
+## ⚙️ 环境要求（重要，先看这里）
+
+| 依赖 | 是否必需 | 说明 |
+|------|---------|------|
+| JDK 17 | ✅ 必需 | 编译和运行都需要，低于 17 无法启动 |
+| DASHSCOPE_API_KEY | ⚠️ AI 功能必需 | 通义千问 API Key；不配也能启动游戏，但提问/判定会报错 |
+| Maven | 可选 | 项目自带 mvnw 脚本，会自动下载，无需手动安装 |
+
+### 1. 安装 JDK 17
+
+下载地址：https://adoptium.net/temurin/releases/?version=17
+
+选 Windows 的 `.msi` 安装包，安装时**勾选「Set JAVA_HOME」和「Add to PATH」**两个选项。
+
+验证是否装好：打开命令行（`Win + R` → 输入 `cmd` 回车），输入 `java -version`，看到 `17.x` 即成功。
+
+### 2. 设置 DASHSCOPE_API_KEY 环境变量
+
+在阿里云百炼（DashScope）控制台申请 API Key 后：
+
+1. 按 `Win + R` 输入 `sysdm.cpl` 回车，打开「系统属性」
+2. 点「高级」→「环境变量」
+3. 在「用户变量」里点「新建」，变量名填 `DASHSCOPE_API_KEY`，变量值填你的 Key
+4. 确定保存，**重新打开命令行窗口**才生效
+
+> 也可以不设环境变量，启动 start.bat 时按提示临时输入（本次运行有效，不写盘）。
+
+---
+
+## 🚀 快速开始
+
+1. 安装 JDK 17（见上）
+2. 设置环境变量 `DASHSCOPE_API_KEY`（见上，可选）
+3. 打包：`mvnw.cmd clean package`（Windows）或 `./mvnw clean package`（Mac/Linux）
+4. 双击 `start.bat`（Windows），浏览器访问 http://localhost:8080
+
+> 更详细的图文说明见 [使用说明.md](使用说明.md)
+
+---
+
 ## ✨ 功能特性
 
 - 🤖 AI 裁判（是 / 否 / 无关）
@@ -26,17 +66,6 @@
 - 🛡 统一 JSON 响应与全局异常处理
 - 🧪 单元测试（14 个用例）
 - 📦 一键启动脚本 start.bat
-
----
-
-## 🚀 快速开始
-
-1. 安装 JDK 17（https://adoptium.net/temurin/releases/?version=17）
-2. 设置环境变量 `DASHSCOPE_API_KEY` 为你的通义千问 API Key
-3. 打包：`mvnw.cmd package`（Windows）或 `./mvnw package`（Mac/Linux）
-4. 双击 `start.bat`（Windows），浏览器访问 http://localhost:8080
-
-> 更详细的图文说明见 [使用说明.md](使用说明.md)
 
 ---
 
@@ -87,6 +116,12 @@
 - 📁 日志写入 logs/ 目录并移出 git 跟踪
 - 🧪 新增 14 个单元测试（题目轮换、AI 响应解析、胜利判定等）
 - 📦 新增 start.bat 一键启动脚本 + 使用说明文档
+
+---
+
+### V1.2.1
+- 🛠 修复 start.bat 在 Windows 下闪退的问题（换行符 CRLF + GBK 编码）
+- 📝 补充「环境要求」章节，明确 JDK 17 与 API Key 的配置步骤
 
 ---
 

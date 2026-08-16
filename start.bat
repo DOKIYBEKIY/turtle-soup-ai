@@ -1,63 +1,71 @@
 @echo off
 setlocal enabledelayedexpansion
-chcp 65001 >nul
-title æµ·é¾Ÿæ±¤ AI - å¯åŠ¨å™¨
+title º£¹êÌÀ AI - Æô¶¯Æ÷
 cd /d "%~dp0"
 
 echo ============================================
-echo   æµ·é¾Ÿæ±¤ AI Â· Turtle Soup  å¯åŠ¨å™¨
+echo    º£¹êÌÀ AI  Æô¶¯Æ÷
 echo ============================================
 echo.
 
-rem ---------- 1. æ‰¾åˆ° Java ----------
+rem ---------- 1. ÕÒµ½ Java ----------
 set "JAVA_EXE=java"
 if defined JAVA_HOME (
     if exist "%JAVA_HOME%\bin\java.exe" set "JAVA_EXE=%JAVA_HOME%\bin\java.exe"
 )
 
-rem å¸¸è§ JDK17 å®‰è£…ä½ç½®å…œåº•
-for %%P in (
-    "C:\Program Files\Java\jdk-17\bin\java.exe"
-    "C:\Program Files\Java\jdk17\bin\java.exe"
-    "C:\Program Files\Eclipse Adoptium\jdk-17\bin\java.exe"
-) do (
-    if not defined JAVA_HOME if exist %%P set "JAVA_EXE=%%~P"
+rem ³£¼û JDK17 °²×°Î»ÖÃ¶µµ×
+if not defined JAVA_HOME (
+    for %%P in (
+        "C:\Program Files\Java\jdk-17\bin\java.exe"
+        "C:\Program Files\Java\jdk17\bin\java.exe"
+        "C:\Program Files\Eclipse Adoptium\jdk-17\bin\java.exe"
+        "C:\Program Files\Eclipse Adoptium\jdk-17.0.8.1-hotspot\bin\java.exe"
+    ) do (
+        if exist %%P set "JAVA_EXE=%%~P"
+    )
 )
 
 "%JAVA_EXE%" -version >nul 2>&1
 if errorlevel 1 (
-    echo [é”™è¯¯] æ²¡æœ‰æ‰¾åˆ°å¯ç”¨çš„ Javaï¼Œè¯·å…ˆå®‰è£… JDK 17 å¹¶è®¾ç½® JAVA_HOMEã€‚
-    echo ä¸‹è½½åœ°å€: https://adoptium.net/temurin/releases/?version=17
+    echo [´íÎó] Ã»ÓĞÕÒµ½¿ÉÓÃµÄ Java¡£
+    echo        ÇëÏÈ°²×° JDK 17£ºhttps://adoptium.net/temurin/releases/?version=17
+    echo        »òÉèÖÃ JAVA_HOME Ö¸ÏòÄãµÄ JDK 17 Ä¿Â¼¡£
     pause
     exit /b 1
 )
 
-rem ---------- 2. æ‰¾åˆ° jar ----------
+echo [1/3] Ê¹ÓÃ Java: %JAVA_EXE%
+
+rem ---------- 2. ÕÒµ½ jar ----------
 set "JAR_FILE="
 for %%F in (target\turtle-soup-ai-*.jar) do set "JAR_FILE=%%F"
 if not defined JAR_FILE (
-    echo [é”™è¯¯] æ²¡æœ‰æ‰¾åˆ°å¯è¿è¡Œçš„æ–‡ä»¶ï¼Œè¯·å…ˆæ‰“åŒ…ï¼šmvn package
+    echo [´íÎó] Ã»ÓĞÕÒµ½¿ÉÔËĞĞÎÄ¼ş target\turtle-soup-ai-*.jar
+    echo        ÇëÏÈÔÚÏîÄ¿Ä¿Â¼Ö´ĞĞ£ºmvnw.cmd clean package
     pause
     exit /b 1
 )
 
+echo [2/3] Ê¹ÓÃÎÄ¼ş: %JAR_FILE%
+
 rem ---------- 3. API Key ----------
 if "%DASHSCOPE_API_KEY%"=="" (
-    echo [æç¤º] æœªæ£€æµ‹åˆ°ç¯å¢ƒå˜é‡ DASHSCOPE_API_KEYã€‚
-    echo         ä½ å¯ä»¥ç°åœ¨è¾“å…¥ Keyï¼ˆæœ¬æ¬¡è¿è¡Œæœ‰æ•ˆï¼Œä¸å†™ç›˜ï¼‰ï¼Œæˆ–ç›´æ¥å›è½¦è·³è¿‡ã€‚
-    set /p "INPUT_KEY=è¯·è¾“å…¥ DashScope API Key: "
+    echo [3/3] Î´¼ì²âµ½»·¾³±äÁ¿ DASHSCOPE_API_KEY¡£
+    echo       ÇëÊäÈë DashScope API Key ºó»Ø³µ£¨±¾´ÎÔËĞĞÓĞĞ§£¬²»Ğ´ÅÌ£©¡£
+    echo       Èç¹û²»ĞèÒª AI ¹¦ÄÜ£¬Ö±½Ó»Ø³µÌø¹ı¡£
+    set /p "INPUT_KEY="
     if not "!INPUT_KEY!"=="" set "DASHSCOPE_API_KEY=!INPUT_KEY!"
 )
 
 echo.
-echo æ­£åœ¨å¯åŠ¨ï¼Œæµè§ˆå™¨è®¿é—® http://localhost:8080
-echo å…³é—­æœ¬çª—å£å³å¯åœæ­¢æœåŠ¡ã€‚
-echo.
+echo ÕıÔÚÆô¶¯£¬ÇëÓÃä¯ÀÀÆ÷·ÃÎÊ http://localhost:8080
+echo ¹Ø±Õ±¾´°¿Ú¼´¿ÉÍ£Ö¹·şÎñ¡£
 echo ============================================
 echo.
 
 "%JAVA_EXE%" -jar "%JAR_FILE%"
 
 echo.
-echo æœåŠ¡å·²åœæ­¢ã€‚
+echo ·şÎñÒÑÍ£Ö¹¡£
 pause
